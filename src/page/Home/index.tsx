@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Layout from "../../layout/Layout";
 
 function Home() {
   return (
-    <div>index sdfasdfadsf</div>
-  )
+    <>
+      <Layout>
+        <div>adfasdf</div>
+      </Layout>
+    </>
+  );
 }
 
-export default Home
+export default Home;
