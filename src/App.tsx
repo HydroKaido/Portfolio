@@ -3,6 +3,7 @@ import Home from './page/Home';
 import About from './page/About';
 import Project from './page/Project';
 import Error from './page/Error';
+import './App.css'
 
 function App() {
   return (
