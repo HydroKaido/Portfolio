@@ -1,4 +1,4 @@
-import React from "react";
+
 import Layout from "../../layout/Layout";
 import ProfileImage from "../../assets/Arola_Image.webp";
 import { FaGithub, FaLinkedin } from "react-icons/fa";

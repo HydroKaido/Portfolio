@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+
 import ProfileImage from '../../assets/Arola_Image.webp'
 
 
