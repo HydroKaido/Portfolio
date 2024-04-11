@@ -15,7 +15,7 @@ function Home() {
                 <img
                   src={ProfileImage}
                   alt=""
-                  className="rounded h-48 w-48 mb-5"
+                  className="rounded-full h-48 w-48 mb-5"
                 />
               </div>
               <div className="w-[23rem] max-lg:w-[20rem]">
