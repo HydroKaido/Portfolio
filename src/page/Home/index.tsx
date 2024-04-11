@@ -1,7 +1,8 @@
 import Layout from "../../layout/Layout";
 import ProfileImage from "../../assets/Arola_Image.webp";
 import Zephyderm from "../../assets/Zephyderm Design.jpg";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaArrowLeft } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -64,27 +65,6 @@ function Home() {
             </div>
             <div></div>
             <div className="card border border-gray-300 rounded-lg shadow-lg">
-  <div className="rounded-lg overflow-hidden">
-    <img src={Zephyderm} alt="" className="w-[400px] rounded-t-lg" />
-  </div>
-  <div className="px-10 py-6">
-    <div className="flex justify-between my-2">
-      <h2 className="border rounded-full text-center px-5 py-2">HTML</h2>
-      <h2 className="border rounded-full text-center px-5 py-2">CSS</h2>
-      <h2 className="border rounded-full text-center px-5 py-2">BOOTSTRAP</h2>
-    </div>
-    <div className="flex justify-between mb-2">
-      <h2 className="border rounded-full text-center px-5 py-2">JAVASCRIPT</h2>
-      <h2 className="border rounded-full text-center px-5 py-2">JQUERY</h2>
-      <h2 className="border rounded-full text-center px-5 py-2">PHP</h2>
-    </div>
-    <div className="flex justify-between my-2">
-      <h2 className="border rounded-full text-center px-5 py-2">MYSQL</h2>
-    </div>
-  </div>
-</div>
-
-<div className="card border border-gray-300 rounded-lg shadow-lg">
               <div></div>
               <div className="rounded-lg overflow-hidden">
                 <img src={Zephyderm} alt="" className="w-[400px] rounded-t-lg" />
@@ -123,11 +103,29 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="rounded-lg">
-              <div>
+            <div className="card border border-gray-300 rounded-lg shadow-lg">
+              <div></div>
+              <div className="rounded-lg overflow-hidden">
                 <img src={Zephyderm} alt="" className="w-[400px] rounded-t-lg" />
               </div>
-              <div className="px-10 shadow">
+              <div className="border-b-2">
+                <div className="ms-3 my-2 font-bold">
+                  <div>
+                    Zephyderm: Appointment System and 
+                  </div>
+                  <div>
+                    Client Monitoring
+                  </div>
+                </div>
+
+              </div>
+              <div className="border-b-2">
+                <div className="w-[370px] ms-3 my-2">
+                Subscription-based service that allows users to enter Amazon product URLs to have them actively scraped for better prices, receiving notifications when price is low.
+                </div>
+              </div>
+              
+              <div className="px-10 py-2 text-sm">
                 <div className="flex justify-between my-2">
                   <h2 className="border-2 rounded-full text-center px-5 ">HTML</h2>
                   <h2 className="border-2 rounded-full text-center px-5">CSS</h2>
@@ -135,7 +133,7 @@ function Home() {
 
                 </div>
                 <div className="flex justify-between mb-2">
-                  <h2 className="border-2 rounded-full text-center px-5">JAVASCRIPT</h2>
+                  <h2 className="border-2 rounded-full text-center px-3 ">JAVASCRIPT</h2>
                   <h2 className="border-2 rounded-full text-center px-5">JQUERY</h2>
                   <h2 className="border-2 rounded-full text-center px-5">PHP</h2>
                 </div>
@@ -144,29 +142,99 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="rounded-lg">
-              <div>
+            <div className="card border border-gray-300 rounded-lg shadow-lg">
+              <div></div>
+              <div className="rounded-lg overflow-hidden">
                 <img src={Zephyderm} alt="" className="w-[400px] rounded-t-lg" />
               </div>
-              <div className="px-10 shadow">
+              <div className="border-b-2">
+                <div className="ms-3 my-2 font-bold">
+                  <div>
+                    Zephyderm: Appointment System and 
+                  </div>
+                  <div>
+                    Client Monitoring
+                  </div>
+                </div>
+
+              </div>
+              <div className="border-b-2">
+                <div className="w-[370px] ms-3 my-2">
+                Subscription-based service that allows users to enter Amazon product URLs to have them actively scraped for better prices, receiving notifications when price is low.
+                </div>
+              </div>
+              
+              <div className="px-10 py-2 text-sm">
                 <div className="flex justify-between my-2">
-                  <h2 className="border rounded-full text-center px-5">HTML</h2>
-                  <h2 className="border rounded-full text-center px-5">CSS</h2>
-                  <h2 className="border rounded-full text-center px-5">BOOTSTRAP</h2>
+                  <h2 className="border-2 rounded-full text-center px-5 ">HTML</h2>
+                  <h2 className="border-2 rounded-full text-center px-5">CSS</h2>
+                  <h2 className="border-2 rounded-full text-center px-5">BOOTSTRAP</h2>
 
                 </div>
                 <div className="flex justify-between mb-2">
-                  <h2 className="border rounded-full text-center px-5">JAVASCRIPT</h2>
-                  <h2 className="border rounded-full text-center px-5">JQUERY</h2>
-                  <h2 className="border rounded-full text-center px-5">PHP</h2>
+                  <h2 className="border-2 rounded-full text-center px-3 ">JAVASCRIPT</h2>
+                  <h2 className="border-2 rounded-full text-center px-5">JQUERY</h2>
+                  <h2 className="border-2 rounded-full text-center px-5">PHP</h2>
                 </div>
                 <div className="flex justify-between my-2">
-                  <h2 className="border rounded-full text-center px-5">MYSQL</h2>
+                  <h2 className="border-2 rounded-full text-center px-5">MYSQL</h2>
+                </div>
+              </div>
+            </div>
+            <div className="card border border-gray-300 rounded-lg shadow-lg">
+              <div></div>
+              <div className="rounded-lg overflow-hidden">
+                <img src={Zephyderm} alt="" className="w-[400px] rounded-t-lg" />
+              </div>
+              <div className="border-b-2">
+                <div className="ms-3 my-2 font-bold">
+                  <div>
+                    Zephyderm: Appointment System and 
+                  </div>
+                  <div>
+                    Client Monitoring
+                  </div>
+                </div>
+
+              </div>
+              <div className="border-b-2">
+                <div className="w-[370px] ms-3 my-2">
+                Subscription-based service that allows users to enter Amazon product URLs to have them actively scraped for better prices, receiving notifications when price is low.
+                </div>
+              </div>
+              
+              <div className="px-10 py-2 text-sm">
+                <div className="flex justify-between my-2">
+                  <h2 className="border-2 rounded-full text-center px-5 ">HTML</h2>
+                  <h2 className="border-2 rounded-full text-center px-5">CSS</h2>
+                  <h2 className="border-2 rounded-full text-center px-5">BOOTSTRAP</h2>
+
+                </div>
+                <div className="flex justify-between mb-2">
+                  <h2 className="border-2 rounded-full text-center px-3 ">JAVASCRIPT</h2>
+                  <h2 className="border-2 rounded-full text-center px-5">JQUERY</h2>
+                  <h2 className="border-2 rounded-full text-center px-5">PHP</h2>
+                </div>
+                <div className="flex justify-between my-2">
+                  <h2 className="border-2 rounded-full text-center px-5">MYSQL</h2>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
+        <div>
+        <Link to={'/project'}  className="flex justify-center mb-5 group hover:text-blue-500">
+            <label>View More Project </label>
+            <FaArrowLeft  className="my-auto ms-3 group-hover:rotate-180 transition-transform transform"/>
+          </Link>
+        </div>
+        {/* Experience */}
+        <div className="flex justify-center items-center mb-10 mx-5">
+          <div className="flex justify-between items-start font-bold">PROJECT</div>
+          <div>adf</div>
+        </div>
+            
       </Layout>
     </>
   );
