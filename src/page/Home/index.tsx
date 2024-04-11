@@ -67,7 +67,7 @@ function Home() {
             <div className="card border border-gray-300 rounded-lg shadow-lg">
               <div></div>
               <div className="rounded-lg overflow-hidden">
-                <img src={Zephyderm} alt="" className=" rounded-t-lg" />
+                <img src={Zephyderm} alt="" className="md:w-[400px] rounded-t-lg" />
               </div>
               <div className="border-b-2">
                 <div className="ms-3 my-2 font-bold">
@@ -81,67 +81,21 @@ function Home() {
 
               </div>
               <div className="border-b-2">
-                <div className=" ms-3 my-2">
+                <div className="md:w-[350px] ms-3 my-2">
                 Subscription-based service that allows users to enter Amazon
                  product URLs to have them actively scraped for better prices,
                   receiving notifications when price is low.
                 </div>
               </div>
               
-              <div className="px-10 py-2 text-sm">
-                <div className="flex justify-between my-2">
-                  <h2 className="border-2 rounded-full text-center px-5 ">HTML</h2>
-                  <h2 className="border-2 rounded-full text-center px-5">CSS</h2>
-                  <h2 className="border-2 rounded-full text-center px-5">BOOTSTRAP</h2>
-
-                </div>
-                <div className="flex justify-between mb-2">
+                <div className="grid grid-cols-3 max-md:grid max-md:grid-cols-2">
+                  <h2 className="border-2 rounded-full text-center ">HTML</h2>
+                  <h2 className="border-2 rounded-full text-center">CSS</h2>
+                  <h2 className="border-2 rounded-full text-center">BOOTSTRAP</h2>
                   <h2 className="border-2 rounded-full text-center px-3 ">JAVASCRIPT</h2>
-                  <h2 className="border-2 rounded-full text-center px-5">JQUERYasdfads</h2>
-                  <h2 className="border-2 rounded-full text-center px-5">PHP</h2>
-                </div>
-                <div className="flex justify-between my-2">
-                  <h2 className="border-2 rounded-full text-center px-5">MYSQL</h2>
-                </div>
-              </div>
-            </div>
-            <div className="card border border-gray-300 rounded-lg shadow-lg">
-              <div></div>
-              <div className="rounded-lg overflow-hidden">
-                <img src={Zephyderm} alt="" className=" rounded-t-lg" />
-              </div>
-              <div className="border-b-2">
-                <div className="ms-3 font-bold">
-                  <div>
-                    Zephyderm: Appointment System and 
-                  </div>
-                  <div>
-                    Client Monitoring
-                  </div>
-                </div>
-
-              </div>
-              <div className="border-b-2">
-                <div className=" my-2">
-                Subscription-based service that allows users to enter Amazon product URLs to have them actively scraped for better prices, receiving notifications when price is low.
-                </div>
-              </div>
-              
-              <div className="px-10 py-2 text-sm">
-                <div className="flex justify-between my-2">
-                  <h2 className="border-2 rounded-full text-center px-5 ">HTML</h2>
-                  <h2 className="border-2 rounded-full text-center px-5">CSS</h2>
-                  <h2 className="border-2 rounded-full text-center px-5">BOOTSTRAP</h2>
-
-                </div>
-                <div className="flex justify-between mb-2">
-                  <h2 className="border-2 rounded-full text-center px-3 ">JAVASCRIPT</h2>
-                  <h2 className="border-2 rounded-full text-center px-5">JQUERY</h2>
-                  <h2 className="border-2 rounded-full text-center px-5">PHP</h2>
-                </div>
-                <div className="flex justify-between my-2">
-                  <h2 className="border-2 rounded-full text-center px-5">MYSQL</h2>
-                </div>
+                  <h2 className="border-2 rounded-full text-center">JQUERY</h2>
+                  <h2 className="border-2 rounded-full text-center">PHP</h2>
+                  <h2 className="border-2 rounded-full text-center">MYSQL</h2>
               </div>
             </div>
           </div>
