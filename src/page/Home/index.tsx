@@ -9,62 +9,60 @@ function Home() {
     <>
       <Layout>
         <div className="flex justify-center items-center ">
-          <div className="gap-10 md:grid md:grid-cols-2 mt-10">
-            <div className="">
-              <div className="max-md:flex max-md:justify-center">
-                <img
-                  src={ProfileImage}
-                  alt=""
-                  className="rounded-full h-48 w-48 mb-5"
-                />
+            <div className="md:w-[750px] xl:w-[800px] mt-7">
+            <div className="gap-10 sm:grid sm:grid-cols-2 mx-2 max-md:mx-4">
+              <div className="flex flex-col justify-center">
+                <div className="max-md:flex max-md:justify-center">
+                  <img
+                    src={ProfileImage}
+                    alt=""
+                    className="rounded-full h-48 w-48 mb-5"
+                  />
+                </div>
+                <div className="">
+                  <div className="mb-2 font-bold text-xl max-md:text-center">
+                    HI, Im Mohammad Jul Hafiz Arola
+                  </div>
+                  
+                  <div className="mb-2">
+                    A software engineer with a passion in ui and front end
+                    development
+                  </div>
+                  <div className="flex mb-2 max-md:justify-center">
+                    <FaGithub className="text-2xl me-3" />
+                    <FaLinkedin className="text-2xl" />
+                  </div>
+                </div>
+
               </div>
-              <div className="w-[23rem] max-lg:w-[20rem]">
-                <div className="mb-2 font-bold max-md:text-center">
-                  HI, Im Mohammad Jul Hafiz Arola
-                </div>
-                <div className="mb-2">
-                  A software engineer with a passion in ui and front end
-                  development
-                </div>
-                <div className="flex text center mb-2">
-                  <FaGithub className="text-2xl me-3" />
-                  <FaLinkedin className="text-2xl" />
-                </div>
-              </div>
-            </div>
-            <div className="w-[25rem] max-lg:w-[20rem]">
-              <div className=" text-wrap">
-                <div className="mb-2">
-                  Computer science graduate with a minor in cybersecurity. My
-                  interest in web development sparked during college, where I
-                  discovered a passion for building functional web applications.
-                </div>
-                <div className="mb-2">
-                  Since college, I've gained valuable experience through
-                  freelance work, focusing on building web applications that
-                  prioritize functionality. This hands-on experience has allowed
-                  me to refine my skills and deepen my understanding of various
-                  technologies.
-                </div>
-                <div className="mb-2">
-                  Continuously seeking to enhance my skills, I work on personal
-                  projects using a range of technologies. These projects not
-                  only serve as a creative outlet but also as a means to stay
-                  up-to-date with the latest trends and tools in web
-                  development.
+              
+              <div className="">
+                <div className=" text-wrap">
+                  <div className="mb-2">
+                    Bachelor of Science in Informationa and Technology. My
+                    interest in web development sparked during college, where I
+                    discovered a passion for building functional web applications.
+                  </div>
+                  <div className="mb-2">
+                    Continuously seeking to enhance my skills, I work on personal
+                    projects using a range of technologies. These projects not
+                    only serve as a creative outlet but also as a means to stay
+                    up-to-date with the latest trends and tools in web
+                    development.
+                  </div>
                 </div>
               </div>
             </div>
-            <div></div>
           </div>
         </div>
+
         <div className="flex justify-center items-center mb-10 mx-5">
-          <div className="gap-x-10 gap-y-5 md:grid md:grid-cols-2 mt-10">
+          <div className="gap-x-10 gap-y-5 sm:grid sm:grid-cols-2 mt-10">
             <div>
               <div className="flex flex-row font-bold">PROJECT</div>
             </div>
             <div></div>
-            <div className="card border border-gray-300 rounded-lg shadow-lg md:w-[400px]">
+            <div className="card border border-gray-300 rounded-lg shadow-lg xl:w-[400px] md:w-[350px] mb-5">
               <div></div>
               <div className="rounded-lg overflow-hidden">
                 <img src={Zephyderm} alt="" className="rounded-t-lg" />
@@ -97,7 +95,7 @@ function Home() {
                   <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2">MYSQL</h2>
               </div>
             </div>
-            <div className="card border border-gray-300 rounded-lg shadow-lg md:w-[400px]">
+            <div className="card border border-gray-300 rounded-lg shadow-lg xl:w-[400px] md:w-[350px] mb-5">
               <div></div>
               <div className="rounded-lg overflow-hidden">
                 <img src={Zephyderm} alt="" className="rounded-t-lg" />
@@ -140,9 +138,12 @@ function Home() {
         </div>
         {/* Experience */}
         <div className="flex justify-center items-center mb-10 mx-5">
-          <div className="flex justify-between items-start font-bold">PROJECT</div>
-          <div>adf</div>
-        </div>
+          <div className="flex justify-between md:w-[800px]">
+              <div>PORTFOLIO</div>
+              <div></div>
+          </div>
+</div>
+
             
       </Layout>
     </>
