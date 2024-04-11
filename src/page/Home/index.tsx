@@ -67,7 +67,7 @@ function Home() {
             <div className="card border border-gray-300 rounded-lg shadow-lg">
               <div></div>
               <div className="rounded-lg overflow-hidden">
-                <img src={Zephyderm} alt="" className="md:w-[400px] rounded-t-lg" />
+                <img src={Zephyderm} alt="" className=" rounded-t-lg" />
               </div>
               <div className="border-b-2">
                 <div className="ms-3 my-2 font-bold">
@@ -81,7 +81,7 @@ function Home() {
 
               </div>
               <div className="border-b-2">
-                <div className="md:w-[350px] ms-3 my-2">
+                <div className=" ms-3 my-2">
                 Subscription-based service that allows users to enter Amazon
                  product URLs to have them actively scraped for better prices,
                   receiving notifications when price is low.
@@ -108,10 +108,10 @@ function Home() {
             <div className="card border border-gray-300 rounded-lg shadow-lg">
               <div></div>
               <div className="rounded-lg overflow-hidden">
-                <img src={Zephyderm} alt="" className="md:w-[400px] rounded-t-lg" />
+                <img src={Zephyderm} alt="" className=" rounded-t-lg" />
               </div>
               <div className="border-b-2">
-                <div className="ms-3 my-2 font-bold">
+                <div className="ms-3 font-bold">
                   <div>
                     Zephyderm: Appointment System and 
                   </div>
@@ -122,7 +122,7 @@ function Home() {
 
               </div>
               <div className="border-b-2">
-                <div className="md:w-[350px] ms-3 my-2">
+                <div className=" my-2">
                 Subscription-based service that allows users to enter Amazon product URLs to have them actively scraped for better prices, receiving notifications when price is low.
                 </div>
               </div>
