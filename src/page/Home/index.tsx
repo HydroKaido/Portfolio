@@ -139,8 +139,11 @@ function Home() {
         {/* Experience */}
         <div className="flex justify-center items-center mb-10 mx-5">
           <div className="flex justify-between md:w-[800px]">
-              <div>PORTFOLIO</div>
-              <div></div>
+            
+              <div className="font-bold">LANGUANGES AND TOOLS</div>
+              <div>
+                
+              </div>
           </div>
 </div>
 
