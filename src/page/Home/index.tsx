@@ -97,7 +97,7 @@ function Home() {
                 </div>
                 <div className="flex justify-between mb-2">
                   <h2 className="border-2 rounded-full text-center px-3 ">JAVASCRIPT</h2>
-                  <h2 className="border-2 rounded-full text-center px-5">JQUERY</h2>
+                  <h2 className="border-2 rounded-full text-center px-5">JQUERYasdfads</h2>
                   <h2 className="border-2 rounded-full text-center px-5">PHP</h2>
                 </div>
                 <div className="flex justify-between my-2">
