@@ -15,7 +15,7 @@ function Home() {
                 <img
                   src={ProfileImage}
                   alt=""
-                  className="rounded-full h-48 w-48 mb-5"
+                  className="rounded h-48 w-48 mb-5"
                 />
               </div>
               <div className="w-[23rem] max-lg:w-[20rem]">
@@ -87,14 +87,14 @@ function Home() {
                   receiving notifications when price is low.
                 </div>
               </div>
-                <div className="grid grid-cols-3 max-md:grid max-md:grid-cols-3">
-                  <h2 className="border-2 rounded-full text-center px-3 mx-2 text-sm my-2">HTML</h2>
-                  <h2 className="border-2 rounded-full text-center px-3 mx-2 text-sm my-2">CSS</h2>
-                  <h2 className="border-2 rounded-full text-center px-3 mx-2 text-sm my-2">BOOTSTRAP</h2>
-                  <h2 className="border-2 rounded-full text-center px-3 mx-2 text-sm mb-2">JAVASCRIPT</h2>
-                  <h2 className="border-2 rounded-full text-center px-3 mx-2 text-sm mb-2">JQUERY</h2>
-                  <h2 className="border-2 rounded-full text-center px-3 mx-2 text-sm mb-2">PHP</h2>
-                  <h2 className="border-2 rounded-full text-center px-3 mx-2 text-sm mb-2">MYSQL</h2>
+                <div className="grid grid-cols-3 max-md:grid max-md:grid-cols-4">
+                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs my-2">HTML</h2>
+                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs my-2">CSS</h2>
+                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs my-2">BOOTSTRAP</h2>
+                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2 max-md:mt-2">JAVASCRIPT</h2>
+                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2">JQUERY</h2>
+                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2">PHP</h2>
+                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2">MYSQL</h2>
               </div>
             </div>
             <div className="card border border-gray-300 rounded-lg shadow-lg md:w-[400px]">
@@ -120,14 +120,14 @@ function Home() {
                   receiving notifications when price is low.
                 </div>
               </div>
-                <div className="grid grid-cols-3 max-md:grid max-md:grid-cols-3">
-                  <h2 className="border-2 rounded-full text-center px-3 mx-2 text-sm my-2">HTML</h2>
-                  <h2 className="border-2 rounded-full text-center px-3 mx-2 text-sm my-2">CSS</h2>
-                  <h2 className="border-2 rounded-full text-center px-3 mx-2 text-sm my-2">BOOTSTRAP</h2>
-                  <h2 className="border-2 rounded-full text-center px-3 mx-2 text-sm mb-2">JAVASCRIPT</h2>
-                  <h2 className="border-2 rounded-full text-center px-3 mx-2 text-sm mb-2">JQUERY</h2>
-                  <h2 className="border-2 rounded-full text-center px-3 mx-2 text-sm mb-2">PHP</h2>
-                  <h2 className="border-2 rounded-full text-center px-3 mx-2 text-sm mb-2">MYSQL</h2>
+                <div className="grid grid-cols-3 max-md:grid max-md:grid-cols-4">
+                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs my-2">HTML</h2>
+                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs my-2">CSS</h2>
+                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs my-2">BOOTSTRAP</h2>
+                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2 max-md:mt-2">JAVASCRIPT</h2>
+                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2">JQUERY</h2>
+                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2">PHP</h2>
+                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2">MYSQL</h2>
               </div>
             </div>
           </div>
