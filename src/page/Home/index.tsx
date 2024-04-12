@@ -1,8 +1,24 @@
 import Layout from "../../layout/Layout";
 import ProfileImage from "../../assets/Arola_Image.webp";
-import Zephyderm from "../../assets/Zephyderm Design.jpg";
-import { FaGithub, FaLinkedin, FaArrowLeft } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin, } from "react-icons/fa";
+import ProjectComponent from "../../components/Project_Component";
+import { JavascriptOriginal } from 'devicons-react';
+import { Html5Plain } from 'devicons-react';
+import { Css3Plain } from 'devicons-react';
+import { PhpPlain } from 'devicons-react';
+import { TailwindcssOriginal } from 'devicons-react';
+import { BootstrapOriginal } from 'devicons-react';
+import { ReactOriginal } from 'devicons-react';
+import { LaravelOriginal } from 'devicons-react';
+import { MysqlOriginal } from 'devicons-react';
+import { ComposerOriginal } from 'devicons-react';
+import { PhotoshopOriginal } from 'devicons-react';
+import { FigmaOriginal } from 'devicons-react';
+import { GithubOriginal } from 'devicons-react';
+import { IonicOriginal } from 'devicons-react';
+import { UnityOriginal } from 'devicons-react';
+import { VscodeOriginal } from 'devicons-react';
+
 
 function Home() {
   return (
@@ -55,99 +71,31 @@ function Home() {
             </div>
           </div>
         </div>
-
-        <div className="flex justify-center items-center mb-10 mx-5">
-          <div className="gap-x-10 gap-y-5 sm:grid sm:grid-cols-2 mt-10">
-            <div>
-              <div className="flex flex-row font-bold">PROJECT</div>
-            </div>
-            <div></div>
-            <div className="card border border-gray-300 rounded-lg shadow-lg xl:w-[400px] md:w-[350px] mb-5">
-              <div></div>
-              <div className="rounded-lg overflow-hidden">
-                <img src={Zephyderm} alt="" className="rounded-t-lg" />
-              </div>
-              <div className="border-b-2">
-                <div className="ms-3 my-2 font-bold">
-                  <div>
-                    Zephyderm: Appointment System and 
-                  </div>
-                  <div>
-                    Client Monitoring
-                  </div>
-                </div>
-
-              </div>
-              <div className="border-b-2">
-                <div className=" ms-3 my-2">
-                Subscription-based service that allows users to enter Amazon
-                 product URLs to have them actively scraped for better prices,
-                  receiving notifications when price is low.
-                </div>
-              </div>
-                <div className="grid grid-cols-3">
-                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs my-2">HTML</h2>
-                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs my-2">CSS</h2>
-                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs my-2">BOOTSTRAP</h2>
-                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2 ">JAVASCRIPT</h2>
-                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2">JQUERY</h2>
-                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2">PHP</h2>
-                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2">MYSQL</h2>
-              </div>
-            </div>
-            <div className="card border border-gray-300 rounded-lg shadow-lg xl:w-[400px] md:w-[350px] mb-5">
-              <div></div>
-              <div className="rounded-lg overflow-hidden">
-                <img src={Zephyderm} alt="" className="rounded-t-lg" />
-              </div>
-              <div className="border-b-2">
-                <div className="ms-3 my-2 font-bold">
-                  <div>
-                    Zephyderm: Appointment System and 
-                  </div>
-                  <div>
-                    Client Monitoring
-                  </div>
-                </div>
-
-              </div>
-              <div className="border-b-2">
-                <div className=" ms-3 my-2">
-                Subscription-based service that allows users to enter Amazon
-                 product URLs to have them actively scraped for better prices,
-                  receiving notifications when price is low.
-                </div>
-              </div>
-                <div className="grid grid-cols-3">
-                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs my-2">HTML</h2>
-                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs my-2">CSS</h2>
-                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs my-2">BOOTSTRAP</h2>
-                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2 ">JAVASCRIPT</h2>
-                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2">JQUERY</h2>
-                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2">PHP</h2>
-                  <h2 className="border-2 rounded text-center px-2 mx-2 text-xs mb-2">MYSQL</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-        <Link to={'/project'}  className="flex justify-center mb-5 group hover:text-blue-500">
-            <label>View More Project </label>
-            <FaArrowLeft  className="my-auto ms-3 group-hover:rotate-180 transition-transform transform"/>
-          </Link>
-        </div>
+        {/* Project Component */}
+        <ProjectComponent/>
         {/* Experience */}
-        <div className="flex justify-center items-center mb-10 mx-5">
-          <div className="flex justify-between md:w-[800px]">
-            
-              <div className="font-bold">LANGUANGES AND TOOLS</div>
-              <div>
-                
+        <div className="flex justify-center items-center flex-col mb-10">
+            <div className="flex ustify-between md:w-[750px] xl:w-[800px]">
+              <div className="gap-10 md:grid-cols-6 grid max-md:grid-cols-4 max-sm:grid-cols-3">
+                <div ><Html5Plain className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><Css3Plain className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><JavascriptOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><ReactOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><BootstrapOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><TailwindcssOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><PhpPlain className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><LaravelOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><MysqlOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><ComposerOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><PhotoshopOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><FigmaOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><IonicOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><GithubOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><UnityOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><VscodeOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
               </div>
+            </div>
           </div>
-</div>
-
-            
       </Layout>
     </>
   );
