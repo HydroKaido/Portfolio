@@ -82,7 +82,7 @@ function Home() {
               <div className="gap-10 md:grid-cols-6 grid max-md:grid-cols-5 max-sm:gap-8 max-sm:grid-cols-3">
                 <div ><Html5Plain className="border-2 shadow-lg p-3 rounded" size="100"/></div>
                 <div><Css3Plain className="border-2 shadow-lg p-3 rounded" size="100"/></div>
-                <div><JavascriptOriginal className="border-2 shadow-lg p-3 max-sm:p-1 rounded" size="100"/></div>
+                <div><JavascriptOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
                 <div><ReactOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
                 <div><BootstrapOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
                 <div><TailwindcssOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
