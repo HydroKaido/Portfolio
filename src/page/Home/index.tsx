@@ -74,12 +74,15 @@ function Home() {
         {/* Project Component */}
         <ProjectComponent/>
         {/* Experience */}
-        <div className="flex justify-center items-center flex-col mb-10">
-            <div className="flex ustify-between md:w-[750px] xl:w-[800px]">
-              <div className="gap-10 md:grid-cols-6 grid max-md:grid-cols-4 max-sm:grid-cols-3">
+        <div className="flex  justify-center items-center mb-10">
+            <div className="md:w-[750px] xl:w-[800px] mx-3">
+              <div className="mb-3 font-bold">
+                LANGUAGES AND TOOLS
+              </div>
+              <div className="gap-10 md:grid-cols-6 grid max-md:grid-cols-5 max-sm:gap-8 max-sm:grid-cols-3">
                 <div ><Html5Plain className="border-2 shadow-lg p-3 rounded" size="100"/></div>
                 <div><Css3Plain className="border-2 shadow-lg p-3 rounded" size="100"/></div>
-                <div><JavascriptOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
+                <div><JavascriptOriginal className="border-2 shadow-lg p-3 max-sm:p-1 rounded" size="100"/></div>
                 <div><ReactOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
                 <div><BootstrapOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
                 <div><TailwindcssOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
