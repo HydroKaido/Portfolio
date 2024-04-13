@@ -2,22 +2,22 @@ import Layout from "../../layout/Layout";
 import ProfileImage from "../../assets/Arola_Image.webp";
 import { FaGithub, FaLinkedin, } from "react-icons/fa";
 import ProjectComponent from "../../components/Project_Component";
-import { JavascriptOriginal } from 'devicons-react';
-import { Html5Plain } from 'devicons-react';
-import { Css3Plain } from 'devicons-react';
-import { PhpPlain } from 'devicons-react';
-import { TailwindcssOriginal } from 'devicons-react';
-import { BootstrapOriginal } from 'devicons-react';
-import { ReactOriginal } from 'devicons-react';
-import { LaravelOriginal } from 'devicons-react';
-import { MysqlOriginal } from 'devicons-react';
-import { ComposerOriginal } from 'devicons-react';
-import { PhotoshopOriginal } from 'devicons-react';
-import { FigmaOriginal } from 'devicons-react';
-import { GithubOriginal } from 'devicons-react';
-import { IonicOriginal } from 'devicons-react';
-import { UnityOriginal } from 'devicons-react';
-import { VscodeOriginal } from 'devicons-react';
+import Javascript from '../../assets/Stack/javascript.png';
+import Html from '../../assets/Stack/html.png';
+import Css from '../../assets/Stack/css.png';
+import Php from '../../assets/Stack/php.png';
+import Tailwind from '../../assets/Stack/tailwind.png';
+import Bootstrap from '../../assets/Stack/bootstrap.png';
+import React from '../../assets/Stack/react.png';
+import Laravel from '../../assets/Stack/laravel.png';
+import Mysql from '../../assets/Stack/mysql.png';
+import Composer from '../../assets/Stack/composer.png';
+import Photoshop from '../../assets/Stack/photoshop.png';
+import Figma from '../../assets/Stack/figma.png';
+import Github from '../../assets/Stack/github.png';
+import Ionic from '../../assets/Stack/ionic.png';
+import Unity from '../../assets/Stack/unity.png';
+import Vscode from '../../assets/Stack/vscode.png';
 
 
 function Home() {
@@ -79,23 +79,23 @@ function Home() {
               <div className="mb-3 font-bold">
                 LANGUAGES AND TOOLS
               </div>
-              <div className="gap-10 md:grid-cols-6 grid max-md:grid-cols-5 max-sm:gap-x-3 max-sm:gap-y-4 max-sm:grid-cols-4 w-auto">
-                <div ><Html5Plain className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><Css3Plain className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><JavascriptOriginal className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><ReactOriginal className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><BootstrapOriginal className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><TailwindcssOriginal className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><PhpPlain className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><LaravelOriginal className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><MysqlOriginal className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><ComposerOriginal className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><PhotoshopOriginal className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><FigmaOriginal className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><IonicOriginal className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><GithubOriginal className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><UnityOriginal className="border-2 shadow-lg p-3  rounded" size="100"/></div>
-                <div><VscodeOriginal className="border-2 shadow-lg p-3  rounded" size="100"/></div>
+              <div className="gap-10 md:grid-cols-8 grid max-md:grid-cols-6  max-sm:gap-10 max-sm:gap-y-4 max-sm:grid-cols-5">
+                <div ><img src={Html} alt="" className=""/></div>
+                <div ><img src={Css} alt="" className=""/></div>
+                <div ><img src={Javascript} alt="" className=""/></div>
+                <div ><img src={React} alt="" className=""/></div>
+                <div ><img src={Bootstrap} alt="" className=""/></div>
+                <div ><img src={Tailwind} alt="" className=""/></div>
+                <div ><img src={Php} alt="" className=""/></div>
+                <div ><img src={Mysql} alt="" className=""/></div>
+                <div ><img src={Laravel} alt="" className=""/></div>
+                <div ><img src={Composer} alt="" className=""/></div>
+                <div ><img src={Unity} alt="" className=""/></div>
+                <div ><img src={Vscode} alt="" className=""/></div>
+                <div ><img src={Github} alt="" className=""/></div>
+                <div ><img src={Ionic} alt="" className=""/></div>
+                <div ><img src={Photoshop} alt="" className=""/></div>
+                <div ><img src={Figma} alt="" className=""/></div>
               </div>
             </div>
           </div>
