@@ -79,7 +79,7 @@ function Home() {
               <div className="mb-3 font-bold">
                 LANGUAGES AND TOOLS
               </div>
-              <div className="gap-10 md:grid-cols-6 grid max-md:grid-cols-5 max-sm:gap-8 max-sm:grid-cols-3">
+              <div className="gap-10 md:grid-cols-6 grid max-md:grid-cols-5 max-sm:gap-x-2 max-sm:gap-y-4 max-sm:grid-cols-3">
                 <div ><Html5Plain className="border-2 shadow-lg p-3 rounded" size="100"/></div>
                 <div><Css3Plain className="border-2 shadow-lg p-3 rounded" size="100"/></div>
                 <div><JavascriptOriginal className="border-2 shadow-lg p-3 rounded" size="100"/></div>
