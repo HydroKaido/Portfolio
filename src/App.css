@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+
+
 *{
     font-family: Poppins;
     font-size: 16px;
 
 }
 
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: #0c0f11;
+}
+
+.shadow-project{
+    box-shadow: 20px #e11d48;
+}

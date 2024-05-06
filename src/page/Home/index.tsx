@@ -6,27 +6,24 @@ import Profile from "../../components/Home_Components/Profile_Components";
 function Home() {
   return (
     <>
+
       <Layout>
         {/* Profile Component */}
         <Profile />
         {/* Project Component */}
-        <ProjectComponent />
-        {/* Languages and Tools  */}
-        <LanguagesTools />
         <div className="flex justify-center items-center mb-3 mx-5 mt-10">
           <div className="w-[800px]">
-            <div className="mb-3 font-bold">EXPERIENCE</div>
-            <div className="bg-gray-100 rounded">
+            <div className="mb-3 text-xl tracking-wide font-bold text-white/90 font-mono">EXPERIENCE</div>
+            <div className="card  rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5">
               <div className="p-4">
-                <div className="flex justify-between text-sm mb-3">
+                <div className="flex justify-between text-sm mb-3 text-white/90">
                   <h2>Graphics Designers</h2>
-                  <h2>July - 2023 to October - 2023</h2>
+                  <h2>Jul - 2023 to Oct - 2023</h2>
                 </div>
-                <div className="font-bold">
-                  JOVASH INTERNATION INC.{" "}
-                  <span className="italic">(INTERN)</span>
+                <div className="font-bold text-white/90 font-mono text-xl tracking-wide ">
+                  JOVASH INTERNATIONAL INC. (INTERN)
                 </div>
-                <div className="text-sm text-gray-600 mt-3">
+                <div className="text-sm text-gray-300/70 mt-3">
                   <ul className="list-disc list-inside">
                     <li>
                       Created graphics for marketing materials, social media
@@ -46,7 +43,7 @@ function Home() {
                     </li>
                   </ul>
                 </div>
-                <div className="text-sm text-gray-600 mt-3">
+                <div className="text-sm text-gray-300/70  mt-3">
                   <p>
                     <span className="font-bold">Skills Developed:</span>
                   </p>
@@ -64,7 +61,7 @@ function Home() {
                     </li>
                   </ul>
                 </div>
-                <div className="text-sm text-gray-600 mt-3">
+                <div className="text-sm text-gray-300/70  mt-3">
                   <p>
                     <span className="font-bold">Impact:</span>
                   </p>
@@ -79,7 +76,7 @@ function Home() {
                     </li>
                   </ul>
                 </div>
-                <div className="text-sm text-gray-600 mt-3">
+                <div className="text-sm text-gray-300/70  mt-3">
                   <p>
                     <span className="font-bold">Learning Experience:</span>
                   </p>
@@ -98,6 +95,9 @@ function Home() {
             </div>
           </div>
         </div>
+        <ProjectComponent />
+        {/* Languages and Tools  */}
+        <LanguagesTools />
       </Layout>
     </>
   );
