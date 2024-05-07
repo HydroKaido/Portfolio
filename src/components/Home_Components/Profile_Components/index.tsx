@@ -8,7 +8,7 @@ function Profile() {
 
     <div className="flex justify-center items-center ">
             <div className="md:w-[750px] xl:w-[800px] sm:mt-7">
-            <div className="flex flex-wrap max-lg:justify-center space-x-10 mx-4">
+            <div className="flex flex-wrap max-lg:justify-center  mx-4">
               <div className="flex-wrap">
                 <div className="flex justify-center">
                   <img
@@ -18,12 +18,12 @@ function Profile() {
                   />
                 </div>
               </div>
-              <div className="flex justify-center items-center">
-                <div className="max-sm:text-center">
+              <div className="sm:flex sm:justify-center sm:items-center ">
+                <div className="text-center">
                   <div className="mb-2">
-                    <h2 className=" text-[27px] font-bold text-white/90 font-mono tracking-wide ">MOHAMMAD JUL HAFIZ AROLA
+                    <h2 className=" text-[25px] font-bold text-white/90 font-mono ">MOHAMMAD JUL HAFIZ AROLA
                     </h2>
-                    <h2 className="text-xl mb-5 text-gray-300/70">
+                    <h2 className=" mb-5 text-gray-300/70">
                       Web Developer and Character Design.
                     </h2>
                     <div className="flex flex-wrap max-sm:justify-center">
