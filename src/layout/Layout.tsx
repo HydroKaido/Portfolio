@@ -14,6 +14,7 @@ function Layout({children}: MyComponentProps) {
           </svg>
         <Header/>
         <div>{children}</div>
+
     </>
 
   )

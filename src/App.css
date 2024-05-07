@@ -10,7 +10,8 @@
 
 body {
     -webkit-font-smoothing: antialiased;
-    background-color: #0c0f11;
+    --tw-bg-opacity: 1;
+    background-color: rgb(28 25 23 / var(--tw-bg-opacity));
 }
 
 .shadow-project{

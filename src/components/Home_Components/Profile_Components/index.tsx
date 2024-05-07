@@ -4,7 +4,9 @@ import { FaLinkedin } from "react-icons/fa6";
 function Profile() {
   return (
     <>
-
+        <div className="pointer-events-none absolute inset-0 overflow-hidden -z-50">
+          <div className=" h-1/2 bg-[url('https://res.cloudinary.com/delba/image/upload/h_500/bg_gradient_pfosr9')] bg-top bg-no-repeat opacity-[0.2]"></div>
+        </div>
 
     <div className="flex justify-center items-center ">
             <div className="md:w-[750px] xl:w-[800px] sm:mt-7">
