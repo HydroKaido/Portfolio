@@ -19,7 +19,7 @@ function Profile() {
                 </div>
               </div>
               <div className="sm:flex sm:justify-center sm:items-center ">
-                <div className="text-center">
+                <div className="max-md:text-center sm: mx-10">
                   <div className="mb-2">
                     <h2 className=" text-[25px] font-bold text-white/90 font-mono ">MOHAMMAD JUL HAFIZ AROLA
                     </h2>
