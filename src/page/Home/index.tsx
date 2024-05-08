@@ -13,7 +13,7 @@ function Home() {
         {/* Project Component */}
 
         <div className="flex justify-center items-center mb-3 mx-5 mt-10">
-          <div className="w-[800px]">
+          <div className="md:w-[750px] xl:w-[800px]">
             <div className="mb-3 text-xl tracking-wide font-bold text-white/90 font-mono">EXPERIENCE</div>
             <div className="card  rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5 ">
               <div className="p-4">

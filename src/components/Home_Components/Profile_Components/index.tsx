@@ -10,7 +10,7 @@ function Profile() {
 
     <div className="flex justify-center items-center ">
             <div className="md:w-[750px] xl:w-[800px] sm:mt-7">
-            <div className="flex flex-wrap max-lg:justify-center  mx-4">
+            <div className="flex flex-wrap max-lg:justify-center">
               <div className="flex-wrap">
                 <div className="flex justify-center">
                   <img
@@ -21,7 +21,7 @@ function Profile() {
                 </div>
               </div>
               <div className="sm:flex sm:justify-center sm:items-center ">
-                <div className="max-md:text-center sm: mx-10">
+                <div className="max-md:text-center sm: mx-2">
                   <div className="mb-2">
                     <h2 className=" text-[25px] font-bold text-white/90 font-mono ">MOHAMMAD JUL HAFIZ AROLA
                     </h2>
