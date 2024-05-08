@@ -13,9 +13,9 @@ function Header() {
     <>
         <div className="flex  justify-center items-center sm:py-8">
           <div className=" max-sm:hidden ">
-          <div className="flex justify-between mx-5 text-white/90 md:w-[750px] xl:w-[800px]">
+          <div className="flex justify-between mx-5 text-white/90 md:w-[700px] xl:w-[800px]">
             <ul>
-              <li className="px-3">asdfasdf</li>
+              <li className="px-3">JULS</li>
             </ul>
             <ul className="flex">
               <li className="mx-3">
@@ -29,8 +29,11 @@ function Header() {
               </li>
             </ul>
             <ul className="flex">
-              <li className="border px-3 rounded-full ">
-                Download CV
+              <li >
+                <a href="" download className="border px-3 rounded-full pointer-events-auto">
+                  Download CV
+                </a>
+
               </li>
             </ul>
           </div>
@@ -69,7 +72,9 @@ function Header() {
                 <Link to={"/project"}>PROJECT</Link>
               </li>
               <li className="mx-3 mb-3 border-2 px-4">
-                Download CV
+                <a href="" download className="mx-3 mb-3 border-2 px-4">
+                  Download CV
+                </a>
               </li>
             </ul>
           </div>

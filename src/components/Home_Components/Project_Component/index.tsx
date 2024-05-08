@@ -5,10 +5,10 @@ function ProjectComponent() {
   return (
     <>
       <div className="flex justify-center items-center mb-3 mx-5 mt-10">
-        <div className="md:w-[750px] xl:w-[800px]">
-          <div className="mb-3 font-bold text-white/90 font-mono text-xl tracking-wide ">PROJECT</div>
+        <div className="w-[750px] xl:w-[800px]">
+          <div className="mb-3 font-bold text-white/90 font-mono text-xl tracking-wide ms-2">PROJECT</div>
           <div className="gap-x-10 md:gap-y-5 grid sm:grid-cols-2">
-            <div className="card relative rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5 shadow-xl hover:shadow-rose-500/10">
+            <div className="card relative rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5">
               <div className="rounded-lg overflow-hidden">
                 <img src={Zephyderm} alt="" className="rounded-t-lg" />
               </div>
@@ -22,7 +22,7 @@ function ProjectComponent() {
                   Zephyderm is a capstone project that created by 4 members and Im the lead programmer for this project i used a technology for it are <span className="text-white/90 font-bold">HTML, CSS, BOOTSTRAP 5, PHP, MYSQL and JQuery</span> 
                 </div>
               </div>
-              <div className="bottom-8 right-0 left-0">
+              <div className="absolute bottom-8 right-0 left-0">
                 <div className="grid grid-cols-2 text-center mt-5">
                   <div>
                     <a href="https://zephyderm.infinityfreeapp.com/" target="_blank" className="bg-blue-500 rounded text-white px-3 py-1 ">
@@ -37,7 +37,7 @@ function ProjectComponent() {
                 </div>
               </div>
             </div>
-            <div className="card relative rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5  shadow-xl hover:shadow-rose-500/10">
+            <div className="card relative rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5 ">
               <div className="rounded-lg overflow-hidden">
                 <img src={Zephyderm} alt="" className="rounded-t-lg" />
               </div>
@@ -48,13 +48,13 @@ function ProjectComponent() {
               </div>
               <div className="">
                 <div className=" ms-3 my-3 text-gray-300/70 mb-12">
-                  This is a personal project created using React, Tailwind for styling, and the PokéAPI.
+                  This is a personal project created using <span className="text-white/90 font-bold">React, Tailwind for styling, and the PokéAPI</span>.
                 </div>
               </div>
               <div className="absolute bottom-8 left-0 right-0">
                 <div className="grid grid-cols-2 text-center mt-5">
                   <div>
-                    <a href="https://zephyderm.infinityfreeapp.com/" target="_blank" className="bg-blue-500 rounded text-white px-3 py-1">
+                    <a href="https://pokemon-api-project-lime.vercel.app/Gen1" target="_blank" className="bg-blue-500 rounded text-white px-3 py-1">
                       Live Demo
                     </a>
                   </div>
@@ -66,7 +66,7 @@ function ProjectComponent() {
                 </div>
               </div>
             </div>
-            <div className="card relative rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5  shadow-xl hover:shadow-rose-500/10">
+            <div className="card relative rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5 ">
               <div className="rounded-lg overflow-hidden">
                 <img src={Zephyderm} alt="" className="rounded-t-lg" />
               </div>
@@ -78,13 +78,13 @@ function ProjectComponent() {
               <div className="">
                 <div className=" ms-3 my-3 text-gray-300/70 mb-12">
                   This is a group project for game development created using the 
-                  Unity game engine, with C# as the scripting language.
+                  <span className="text-white/90 font-bold"> Unity</span> game engine, with <span className="text-white/90 font-bold"> C#</span> as the scripting language.
                 </div>
               </div>
               <div className="absolute bottom-8 left-0 right-0">
                 <div className="grid grid-cols-2 text-center mt-5">
                   <div>
-                    <a href="https://zephyderm.infinityfreeapp.com/" target="_blank" className="bg-blue-500 rounded text-white px-3 py-1">
+                    <a href="https://blazingwolfstudio32.itch.io/kali-the-darkness-arrive" target="_blank" className="bg-blue-500 rounded text-white px-3 py-1">
                       Live Demo
                     </a>
                   </div>
@@ -96,7 +96,7 @@ function ProjectComponent() {
                 </div>
               </div>
             </div>
-            <div className="card relative  rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5  shadow-xl hover:shadow-rose-500/10">
+            <div className="card relative  rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5 ">
               <div className="rounded-lg overflow-hidden">
                 <img src={Zephyderm} alt="" className="rounded-t-lg" />
               </div>
@@ -107,16 +107,11 @@ function ProjectComponent() {
               </div>
               <div className="">
                 <div className=" ms-3 my-3 text-gray-300/70 mb-12">
-                  It's a multiplayer ping-pong game created using the Unity game engine, with C# as the scripting language, and Firebase for the backend.
+                  It's a multiplayer ping-pong game created using the <span className="text-white/90 font-bold"> Unity</span> game engine, with <span className="text-white/90 font-bold">C#</span> as the scripting language, and <span className="text-white/90 font-bold">Firebase</span> for the backend.
                 </div>
               </div>
               <div className="absolute bottom-8 left-0 right-0">
                 <div className="grid grid-cols-2 text-center mt-5">
-                  <div>
-                    <a href="https://zephyderm.infinityfreeapp.com/" target="_blank" className="bg-blue-500 rounded text-white px-3 py-1">
-                      Live Demo
-                    </a>
-                  </div>
                   <div>
                     <a href="" className="bg-gray-300 rounded text-gray-700/90 px-3 py-1">
                       Github
