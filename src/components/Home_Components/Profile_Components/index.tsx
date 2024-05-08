@@ -28,7 +28,7 @@ function Profile() {
                     <h2 className=" text-gray-300 mb-3">
                       Web Developer and Character Design
                     </h2>
-                    <h2 className=" mb-5 text-gray-300/70">
+                    <h2 className=" mb-5 text-gray-300/70 max-sm:text-sm">
                        mohammadjulhafizarola@gmail.com
                     </h2>
                     <div className="flex flex-wrap max-sm:justify-center">

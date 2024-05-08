@@ -61,7 +61,7 @@ function Home() {
                     </li>
                   </ul>
                 </div>
-                <div className="text-sm text-gray-300/70 mt-3">
+                <div className="text-sm text-gray-300/70  mt-3">
                   <p>
                     <span className="font-bold text-gray-300">Learning Experience:</span>
                   </p>
