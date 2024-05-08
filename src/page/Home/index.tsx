@@ -24,19 +24,18 @@ function Home() {
                 <div className="font-bold text-white/90 font-mono text-xl tracking-wide ">
                   JOVASH INTERNATIONAL INC. (INTERN)
                 </div>
+                <div className="font-bold text-gray-300/70 font-mono text-xl tracking-wide ">
+                  486 Hours rendered
+                </div>
                 <div className="text-sm text-gray-300/70 mt-3">
                   <ul className="list-disc list-inside">
                     <li>
                       Created graphics for marketing materials, social media
-                      posts, and website banners.
+                      posts, and others graphics materials.
                     </li>
                     <li>
                       Assisted in the development of branding materials for new
                       product launches.
-                    </li>
-                    <li>
-                      Collaborated with the marketing team to conceptualize and
-                      execute design projects.
                     </li>
                     <li>
                       Received positive feedback from supervisors for creativity
@@ -46,11 +45,11 @@ function Home() {
                 </div>
                 <div className="text-sm text-gray-300/70  mt-3">
                   <p>
-                    <span className="font-bold">Skills Developed:</span>
+                    <span className="font-bold text-gray-300">Skills Developed:</span>
                   </p>
                   <ul className="list-disc list-inside">
                     <li>
-                      Proficiency in Adobe Photoshop, Illustrator, and InDesign.
+                      Proficiency in Adobe Photoshop, Illustrator, and Canva.
                     </li>
                     <li>
                       Improved time management abilities by effectively
@@ -62,24 +61,9 @@ function Home() {
                     </li>
                   </ul>
                 </div>
-                <div className="text-sm text-gray-300/70  mt-3">
+                <div className="text-sm text-gray-300/70 mt-3">
                   <p>
-                    <span className="font-bold">Impact:</span>
-                  </p>
-                  <ul className="list-disc list-inside">
-                    <li>
-                      Increased engagement on social media platforms by 20%
-                      through visually appealing marketing materials.
-                    </li>
-                    <li>
-                      Contributed to the successful launch of a new product line
-                      by creating compelling graphics.
-                    </li>
-                  </ul>
-                </div>
-                <div className="text-sm text-gray-300/70  mt-3">
-                  <p>
-                    <span className="font-bold">Learning Experience:</span>
+                    <span className="font-bold text-gray-300">Learning Experience:</span>
                   </p>
                   <ul className="list-disc list-inside">
                     <li>
@@ -91,6 +75,9 @@ function Home() {
                       changes into design projects.
                     </li>
                   </ul>
+                </div>
+                <div className="text-gray-300/70 mt-10 underline">
+                  <a href="https://drive.google.com/file/d/1jviIUYzoo7HaU4JfC0_95dlTVQOXaAMS/view?usp=sharing" target="_blank" className="">View Certificates</a>
                 </div>
               </div>
             </div>

@@ -25,8 +25,11 @@ function Profile() {
                   <div className="mb-2">
                     <h2 className=" text-[25px] font-bold text-white/90 font-mono ">MOHAMMAD JUL HAFIZ AROLA
                     </h2>
+                    <h2 className=" text-gray-300 mb-3">
+                      Web Developer and Character Design
+                    </h2>
                     <h2 className=" mb-5 text-gray-300/70">
-                      Web Developer and Character Design.
+                       mohammadjulhafizarola@gmail.com
                     </h2>
                     <div className="flex flex-wrap max-sm:justify-center">
                       <div className="flex">
