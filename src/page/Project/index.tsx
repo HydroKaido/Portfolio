@@ -21,9 +21,9 @@ function Project() {
             <h2 className="font-mono tracking-wide text-4xl font-bold text-center text-white/90 mb-8">PROJECT</h2>
             {/* Layout */}
             {projects.map((project, index) => (
-              <div key={index}>
+              <div key={index} className="headline">
                 <h2 className="mb-3 text-white/90 font-bold">{project.title}</h2>
-                <div className='card rounded-2xl bg-white/5 p-7  hover:bg-white/10 focus-visible:ring-rose-500/70 mb-10 headline'>
+                <div className='card rounded-2xl bg-white/5 p-7  hover:bg-white/10 focus-visible:ring-rose-500/70 mb-10 '>
                   <div className="flex justify-center">
                     <div className="grid md:grid-cols-2">
                       <div className="flex flex-col max-md:order-1">

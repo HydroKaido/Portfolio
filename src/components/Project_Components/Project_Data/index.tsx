@@ -2,6 +2,7 @@ import Zephyderm from "../../../assets/Zephyderm Design.jpg";
 import PokeDex from "../../../assets/Pokemon-Pokedex.jpg"
 import Kali from "../../../assets/Kali.png"
 import NavalConquest from "../../../assets/Naval Conquest.png"
+import Etsibog from "../../../assets/Untitled design.jpg"
 
 export const projects = [
     {
@@ -134,5 +135,36 @@ export const projects = [
             </div>
           </div>
       )
-    }
+    },
+    {
+      title: "E-Tsibu: A mobile application for sharing recipe and tutorial for cooking",
+      songName: (
+        <ul className="text-sm list-disc list-inside">
+            <li className="mb-3">
+              This mobile application created using <span className="text-white/90 font-bold">Angular and Ionic</span>.
+            </li>
+            <li className="mb-3">
+              This mobile application is a cooking recipe who wants to share their recipe in the application.
+            </li>
+            <li>
+              Features include search by ingredient, category or user; save favorite recipes; create your own recipe; and more.
+            </li>
+        </ul>
+      ),
+      image: Etsibog,
+      link: (
+          <div className="flex mt-5">
+            <div className="me-3">
+              <a href="https://zephyderm.infinityfreeapp.com/" target="_blank" className="bg-blue-500 rounded text-white px-3 py-1 ">
+                Live Demo
+              </a>
+            </div>
+            <div>
+              <a href="" className="bg-gray-300 rounded text-gray-700/90 px-3 py-1">
+                Github
+              </a>
+            </div>
+          </div>
+      )
+    },
   ]
