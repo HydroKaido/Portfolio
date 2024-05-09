@@ -63,7 +63,7 @@ function Header() {
             </ul>
             <ul className="absolute top-[250px] left-7 text-center">
               <li className="mx-3 mb-3 border-2 px-4">
-                <Link to={"/home"}>HOME</Link>
+                <Link to={"/"}>HOME</Link>
               </li>
               <li className="mx-3 mb-3 border-2 px-4">
                 <Link to={"/about"}>ABOUT</Link>
