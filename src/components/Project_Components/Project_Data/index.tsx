@@ -1,4 +1,7 @@
 import Zephyderm from "../../../assets/Zephyderm Design.jpg";
+import PokeDex from "../../../assets/Pokemon-Pokedex.jpg"
+import Kali from "../../../assets/Kali.png"
+import NavalConquest from "../../../assets/Naval Conquest.png"
 
 export const projects = [
     {
@@ -7,10 +10,13 @@ export const projects = [
         <>
         <ul className="text-sm list-disc list-inside">
             <li className="mb-3">
-                Zephyderm is a capstone project created by a team of four, with me as the lead programmer. I utilized HTML, CSS, Bootstrap 5, PHP, MySQL, and JQuery.
+                Zephyderm is a capstone project created by a team of four, with me as the lead programmer. I utilized <span className="font-bold text-white/90">HTML, CSS, Bootstrap 5, PHP, MySQL, and JQuery.</span>
+            </li>
+            <li className="mb-3">
+                Developed an appointment system for clients to <span className="font-bold text-white/90">book easily</span> it has and <span className="font-bold text-white/90">access their records for tracking</span>.
             </li>
             <li>
-                Developed an appointment system for clients to book easily and access their records for tracking.
+                This system is having a <span className="font-bold text-white/90">lot of module</span> like dashboard module, appointment module, client record module, reschedule module, website settings module, and more..
             </li>
         </ul>
         </>
@@ -34,19 +40,23 @@ export const projects = [
       )
     },
     {
-      title: "Zephyderm: Appointment System and Client Monitoring",
+      title: "Naval Conquest",
       songName: (
-        <span>
-          Zephyderm is a capstone project that was created by 4 members, and I'm the lead programmer for this project. The technologies I used for it are: 
-          <span className="text-white/90 font-bold"> HTML</span>, 
-          <span className="text-white/90 font-bold"> CSS</span>, 
-          <span className="text-white/90 font-bold"> BOOTSTRAP 5</span>, 
-          <span className="text-white/90 font-bold"> PHP</span>, 
-          <span className="text-white/90 font-bold"> MYSQL</span>, and 
-          <span className="text-white/90 font-bold"> JQuery</span>.
-        </span>
+        <ul className="text-sm list-disc list-inside">
+            <li className="mb-3">
+            This is a group project for game development created using the 
+                      <span className="text-white/90 font-bold"> Unity</span> game engine, with <span className="text-white/90 font-bold"> C#</span> as the scripting language.
+            </li>
+            <li className="mb-3">
+              This project was created by a team of 2, who developed this game within 1 week.
+            </li>
+            <li>
+                
+              This game application <span className="text-white/90 font-bold">requires players to log in before playing.</span> It's a multiplayer game, so <span className="text-white/90 font-bold">both parties need separate devices.</span> The winner is the one with the highest score within the time limit or reaching a score of 10 first.
+            </li>
+        </ul>
       ),
-      image: Zephyderm,
+      image: NavalConquest,
       link: (
           <div className="flex mt-5">
             <div className="me-3">
@@ -63,19 +73,22 @@ export const projects = [
       )
     },
     {
-      title: "Zephyderm: Appointment System and Client Monitoring",
+      title: "Kali: The Darkness Arrive",
       songName: (
-        <span>
-          Zephyderm is a capstone project that was created by 4 members, and I'm the lead programmer for this project. The technologies I used for it are: 
-          <span className="text-white/90 font-bold"> HTML</span>, 
-          <span className="text-white/90 font-bold"> CSS</span>, 
-          <span className="text-white/90 font-bold"> BOOTSTRAP 5</span>, 
-          <span className="text-white/90 font-bold"> PHP</span>, 
-          <span className="text-white/90 font-bold"> MYSQL</span>, and 
-          <span className="text-white/90 font-bold"> JQuery</span>.
-        </span>
+        <ul className="text-sm list-disc list-inside">
+            <li className="mb-3">
+              This is a group project for game development created using the 
+              <span className="text-white/90 font-bold"> Unity</span> game engine, with <span className="text-white/90 font-bold"> C#</span> as the scripting language.
+            </li>
+            <li className="mb-3">
+              This game application is similar to Gun Mayhem, but the characters here only use swords, sticks, and other melee weapons.
+            </li>
+            <li>
+              This is a <span className="text-white/90 font-bold">player vs. player</span> so only shared device enable to play this game
+            </li>
+        </ul>
       ),
-      image: Zephyderm,
+      image: Kali,
       link: (
           <div className="flex mt-5">
             <div className="me-3">
@@ -92,19 +105,21 @@ export const projects = [
       )
     },
     {
-      title: "Zephyderm: Appointment System and Client Monitoring",
+      title: "Pokemon Pokedex",
       songName: (
-        <span>
-          Zephyderm is a capstone project that was created by 4 members, and I'm the lead programmer for this project. The technologies I used for it are: 
-          <span className="text-white/90 font-bold"> HTML</span>, 
-          <span className="text-white/90 font-bold"> CSS</span>, 
-          <span className="text-white/90 font-bold"> BOOTSTRAP 5</span>, 
-          <span className="text-white/90 font-bold"> PHP</span>, 
-          <span className="text-white/90 font-bold"> MYSQL</span>, and 
-          <span className="text-white/90 font-bold"> JQuery</span>.
-        </span>
+        <ul className="text-sm list-disc list-inside">
+            <li className="mb-3">
+              This is a personal project created using <span className="text-white/90 font-bold">React, Tailwind for styling, and the PokéAPI</span>.
+            </li>
+            <li className="mb-3">
+            This was built from scratch as an attempt to learn frameworks. This project helped me learn a lot, such as using <span className="text-white/90 font-bold">Axios, useEffect, useState, and more.</span>
+            </li>
+            <li>
+              This is recommended for those struggling to learn a frontend framework to understand how it works.
+            </li>
+        </ul>
       ),
-      image: Zephyderm,
+      image: PokeDex,
       link: (
           <div className="flex mt-5">
             <div className="me-3">

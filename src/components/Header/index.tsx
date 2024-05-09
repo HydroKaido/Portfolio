@@ -13,24 +13,16 @@ function Header() {
     <>
         <div className="flex  justify-center items-center sm:py-8">
           <div className=" max-sm:hidden ">
-          <div className="flex justify-between mx-5 text-white/90 md:w-[700px] xl:w-[800px]">
+          <div className="flex justify-between mx-5 text-white/80  md:w-[700px] xl:w-[800px]">
             <ul>
-              <li className="px-3">JULS</li>
+              <li className="px-3 hover:text-white/100"><Link to={"/"} className="hover:text-white/100 font-bold font-mono text-xl">JULS</Link></li>
             </ul>
             <ul className="flex">
-              <li className="mx-3">
-                <Link to={"/"}>HOME</Link>
+              <li className="mx-4">
+                <Link to={"/project"} className="hover:text-white/100">PROJECT</Link>
               </li>
-              <li className="mx-3">
-                <Link to={"/project"}>PROJECT</Link>
-              </li>
-              <li className="mx-3">
-                <Link to={"/about"}>CONTACT</Link>
-              </li>
-            </ul>
-            <ul className="flex">
               <li >
-                <a href="" download className="border px-3 rounded-full pointer-events-auto">
+                <a href="" download className="border px-2 rounded-full pointer-events-auto hover:text-white/100">
                   Download CV
                 </a>
 
@@ -38,8 +30,6 @@ function Header() {
             </ul>
           </div>
         </div>
-      
-        
       </div>
       <div >
         <button className="sm:text-center sm:hidden sm:border " onClick={toggle}>
@@ -49,30 +39,22 @@ function Header() {
       <div>
       {isOpen && 
       <aside className="max-sm:fixed max-sm:bg-black max-sm:bg-opacity-60 max-sm:top-0 max-sm:left-0 max-sm:right-0 max-sm:bottom-0 max-sm:z-40 max-sm:h-screen " onClick={toggle}>
-        <div className="max-sm:h-full max-sm:w-64 max-sm:bg-gray-50 max-sm:border max-sm:relative max-sm:top-[0px] max-sm:left-0 " onClick={(event) => event.stopPropagation()}>
+        <div className="max-sm:h-full max-sm:w-64 max-sm:bg-neutral-800  max-sm:relative max-sm:top-[0px] max-sm:left-0 " onClick={(event) => event.stopPropagation()}>
           <div className="flex justify-end">
             <button className="sm:absolute sm:hidden" onClick={toggle}>
-              <IoCloseSharp className="text-4xl mx-3 mt-2 p-1 rounded hover:bg-gray-200"/>
+              <IoCloseSharp className="text-4xl mx-3 mt-2 p-1 rounded text-white/70 hover:text-neutral-800 hover:bg-gray-200"/>
             </button>
           </div>
           <div className="sm:hidden">
-            <ul className="flex flex-col items-center">
-              <li className="px-3 text-center mb-10">
-                HYDROTOLERANCE
+            <ul className="absolute top-[250px] left-10 text-center">
+              <li className="mx-3 mb-8 border-2 px-4 rounded-full py-1">
+                <Link to={"/"} className="text-white/70">HOME</Link>
               </li>
-            </ul>
-            <ul className="absolute top-[250px] left-7 text-center">
-              <li className="mx-3 mb-3 border-2 px-4">
-                <Link to={"/"}>HOME</Link>
+              <li className="mx-3 mb-8 border-2 px-4 rounded-full py-1">
+                <Link to={"/project"} className="text-white/70">PROJECT</Link>
               </li>
-              <li className="mx-3 mb-3 border-2 px-4">
-                <Link to={"/about"}>ABOUT</Link>
-              </li>
-              <li className="mx-3 mb-3 border-2 px-4">
-                <Link to={"/project"}>PROJECT</Link>
-              </li>
-              <li className="mx-3 mb-3 border-2 px-4">
-                <a href="" download className="mx-3 mb-3 border-2 px-4">
+              <li >
+                <a href="" download className="mx-3 mb-3 border-2 px-4 rounded-full py-1 text-white/70">
                   Download CV
                 </a>
               </li>

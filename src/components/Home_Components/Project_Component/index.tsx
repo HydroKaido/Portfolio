@@ -3,6 +3,9 @@ import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ScrollReveal from 'scrollreveal';
 import { useEffect } from "react";
+import PokedexApi from "../../../assets/Pokemon-Pokedex.jpg"
+import NavalConquest from "../../../assets/Naval Conquest.png"
+import Kali from "../../../assets/Kali.png"
 
 function ProjectComponent() {
   useEffect(() => {
@@ -72,7 +75,7 @@ function ProjectComponent() {
             </div>
             <div className="card relative headline1 rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5 ">
               <div className="rounded-lg overflow-hidden">
-                <img src={Zephyderm} alt="" className="rounded-t-lg" />
+                <img src={PokedexApi} alt="" className="rounded-t-lg" />
               </div>
               <div className="">
                 <div className="ms-3 my-5 font-bold">
@@ -101,7 +104,7 @@ function ProjectComponent() {
             </div>
             <div className="card relative headline2 rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5 ">
               <div className="rounded-lg overflow-hidden">
-                <img src={Zephyderm} alt="" className="rounded-t-lg" />
+                <img src={Kali} alt="" className="rounded-t-lg" />
               </div>
               <div className="">
                 <div className="ms-3 my-5 font-bold">
@@ -131,7 +134,7 @@ function ProjectComponent() {
             </div>
             <div className="card relative headline3 rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5 ">
               <div className="rounded-lg overflow-hidden">
-                <img src={Zephyderm} alt="" className="rounded-t-lg" />
+                <img src={NavalConquest} alt="" className="rounded-t-lg" />
               </div>
               <div className="">
                 <div className="ms-3 my-5 font-bold">
@@ -159,7 +162,7 @@ function ProjectComponent() {
       <div>
         <Link
           to={"/project"}
-          className="flex justify-center mb-5 group hover:text-blue-500 text-white/90 headline"
+          className="flex justify-center mb-5 group hover:text-blue-500 text-white/90 headline2"
         >
           <label>View More Project </label>
           <FaArrowLeft className="my-auto ms-3 group-hover:rotate-180 transition-transform transform" />
