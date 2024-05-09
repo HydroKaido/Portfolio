@@ -1,4 +1,4 @@
-import Zephyderm from "../../assets/Zephyderm Design.jpg";
+import Zephyderm from "../../../assets/Zephyderm Design.jpg";
 
 export const projects = [
     {

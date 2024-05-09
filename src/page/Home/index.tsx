@@ -4,7 +4,9 @@ import LanguagesTools from "../../components/Home_Components/Languages_and_Tools
 import Profile from "../../components/Home_Components/Profile_Components";
 import ExperienceComponet from "../../components/Home_Components/Experience_Component/ExperienceComponent";
 
-function Home() {
+
+export function Home() {
+
   return (
     <>
 

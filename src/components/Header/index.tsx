@@ -22,10 +22,10 @@ function Header() {
                 <Link to={"/"}>HOME</Link>
               </li>
               <li className="mx-3">
-                <Link to={"/about"}>ABOUT</Link>
+                <Link to={"/project"}>PROJECT</Link>
               </li>
               <li className="mx-3">
-                <Link to={"/project"}>PROJECT</Link>
+                <Link to={"/about"}>CONTACT</Link>
               </li>
             </ul>
             <ul className="flex">

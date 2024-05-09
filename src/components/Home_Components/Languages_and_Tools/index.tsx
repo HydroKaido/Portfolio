@@ -17,10 +17,20 @@ import Vscode from '../../../assets/Stack/vscode.png';
 import Node from '../../../assets/Stack/node.png';
 import Express from '../../../assets/Stack/express.png';
 import MongoDB from '../../../assets/Stack/mongodb.png';
+import ScrollReveal from 'scrollreveal';
+import { useEffect } from "react";
 
 function LanguagesTools() {
+  useEffect(() => {
+    ScrollReveal().reveal('.headline', 
+    { 
+      delay: 200,
+      interval: 200,
+      duration: 1000,
+     })
+    }, []);
   return (
-    <div className="flex  justify-center items-center mb-10 mt-10">
+    <div className="flex  justify-center items-center mb-10 mt-10 headline">
     <div className="w-[750px] xl:w-[800px] mx-5">
     <div className="mb-3 font-bold text-white/90 font-mono text-xl tracking-wide ms-2">
           LANGUAGES AND TOOLS

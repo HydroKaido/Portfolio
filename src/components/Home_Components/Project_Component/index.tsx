@@ -1,14 +1,47 @@
 import Zephyderm from "../../../assets/Zephyderm Design.jpg";
 import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import ScrollReveal from 'scrollreveal';
+import { useEffect } from "react";
+
 function ProjectComponent() {
+  useEffect(() => {
+    ScrollReveal().reveal('.all', 
+    { 
+      delay: 300,
+     }),
+    ScrollReveal().reveal('.headline', 
+    { 
+      delay: 200,
+      interval: 200,
+      duration: 1000,
+     }),
+     ScrollReveal().reveal('.headline1', 
+    { 
+      delay: 500,
+      interval: 200,
+      duration: 1000,
+     })
+     ScrollReveal().reveal('.headline2', 
+    { 
+      delay: 700,
+      interval: 200,
+      duration: 1000,
+     })
+     ScrollReveal().reveal('.headline3', 
+    { 
+      delay: 900,
+      interval: 200,
+      duration: 1000,
+     })
+    }, []);
   return (
     <>
-      <div className="flex justify-center items-center mb-3 mx-5 mt-10">
+      <div className="flex justify-center items-center mb-3 mx-5 mt-10 all">
         <div className="w-[750px] xl:w-[800px]">
           <div className="mb-3 font-bold text-white/90 font-mono text-xl tracking-wide ms-2">PROJECT</div>
           <div className="gap-x-10 md:gap-y-5 grid sm:grid-cols-2">
-            <div className="card relative rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5">
+            <div className="card relative headline rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5">
               <div className="rounded-lg overflow-hidden">
                 <img src={Zephyderm} alt="" className="rounded-t-lg" />
               </div>
@@ -37,7 +70,7 @@ function ProjectComponent() {
                 </div>
               </div>
             </div>
-            <div className="card relative rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5 ">
+            <div className="card relative headline1 rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5 ">
               <div className="rounded-lg overflow-hidden">
                 <img src={Zephyderm} alt="" className="rounded-t-lg" />
               </div>
@@ -66,7 +99,7 @@ function ProjectComponent() {
                 </div>
               </div>
             </div>
-            <div className="card relative rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5 ">
+            <div className="card relative headline2 rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5 ">
               <div className="rounded-lg overflow-hidden">
                 <img src={Zephyderm} alt="" className="rounded-t-lg" />
               </div>
@@ -96,7 +129,7 @@ function ProjectComponent() {
                 </div>
               </div>
             </div>
-            <div className="card relative  rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5 ">
+            <div className="card relative headline3 rounded-2xl bg-white/5 p-7 transition duration-300 hover:bg-white/10 focus-visible:ring-rose-500/70 mb-5 ">
               <div className="rounded-lg overflow-hidden">
                 <img src={Zephyderm} alt="" className="rounded-t-lg" />
               </div>
@@ -126,7 +159,7 @@ function ProjectComponent() {
       <div>
         <Link
           to={"/project"}
-          className="flex justify-center mb-5 group hover:text-blue-500 text-white/90"
+          className="flex justify-center mb-5 group hover:text-blue-500 text-white/90 headline"
         >
           <label>View More Project </label>
           <FaArrowLeft className="my-auto ms-3 group-hover:rotate-180 transition-transform transform" />
