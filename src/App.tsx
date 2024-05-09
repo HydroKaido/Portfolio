@@ -3,12 +3,14 @@ import Home from './page/Home';
 import About from './page/About';
 import Project from './page/Project';
 import Error from './page/Error';
+import ScrollToTop from "./ScrollTop";
 import './App.css'
 
 function App() {
   return (
       <div>
         <BrowserRouter>
+        <ScrollToTop/>
           <Routes>
             <Route index element={<Home/>}></Route>
             <Route path="/" element={<Home/>}></Route>
