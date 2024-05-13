@@ -16,7 +16,7 @@ function Project() {
   return (
     <>
       <Layout>
-        <div className="flex justify-center items-center mb-3 mx-5 mt-10">
+        <div className="flex justify-center items-center mb-3 mx-5 sm:mt-10">
           <div className="w-[750px] xl:w-[800px]">
             <h2 className="font-mono tracking-wide text-4xl font-bold text-center text-white/90 mb-8">PROJECT</h2>
             {/* Layout */}
