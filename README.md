@@ -9,7 +9,6 @@ This portfolio project is designed to provide an overview of my background, skil
 - Responsive design: Ensures optimal viewing experience across a wide range of devices.
 - Resume section: Provides detailed information about my education, work experience, and skills.
 - Projects showcase: Highlights my most significant projects, including descriptions, technologies used, and links to live demos or GitHub repositories.
-- Contact form: Allows visitors to get in touch with me easily.
 
 ## Technologies Used
 - React
