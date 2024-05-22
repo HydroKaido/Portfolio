@@ -66,7 +66,7 @@ function ProjectComponent() {
                     </a>
                   </div>
                   <div>
-                    <a href="" className="bg-gray-300 rounded text-gray-700/90 px-3 py-1">
+                    <a href="https://github.com/HydroTolerance/Zephyderm" target="_blank" className="bg-gray-300 rounded text-gray-700/90 px-3 py-1">
                       Github
                     </a>
                   </div>
@@ -95,7 +95,7 @@ function ProjectComponent() {
                     </a>
                   </div>
                   <div>
-                    <a href="" className="bg-gray-300 rounded text-gray-700/90 px-3 py-1">
+                    <a href="https://github.com/HydroTolerance/Pokemon_Api" target="_blank" className="bg-gray-300 rounded text-gray-700/90 px-3 py-1">
                       Github
                     </a>
                   </div>
@@ -121,11 +121,11 @@ function ProjectComponent() {
                 <div className="grid grid-cols-2 text-center mt-5">
                   <div>
                     <a href="https://blazingwolfstudio32.itch.io/kali-the-darkness-arrive" target="_blank" className="bg-blue-500 rounded text-white px-3 py-1">
-                      Live Demo
+                      Download
                     </a>
                   </div>
                   <div>
-                    <a href="" className="bg-gray-300 rounded text-gray-700/90 px-3 py-1">
+                    <a href="https://github.com/HydroTolerance/kali-the-darkness-arrive" target="_blank" className="bg-gray-300 rounded text-gray-700/90 px-3 py-1">
                       Github
                     </a>
                   </div>
@@ -149,7 +149,7 @@ function ProjectComponent() {
               <div className="absolute bottom-8 left-0 right-0">
                 <div className="grid grid-cols-2 text-center mt-5">
                   <div>
-                    <a href="" className="bg-gray-300 rounded text-gray-700/90 px-3 py-1">
+                    <a href="https://github.com/HydroTolerance/Naval_Conquest" target="_blank" className="bg-gray-300 rounded text-gray-700/90 px-3 py-1">
                       Github
                     </a>
                   </div>
