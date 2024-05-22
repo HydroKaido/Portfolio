@@ -1,6 +1,7 @@
 import ProfileImage from "../../../assets/Arola_Image.webp";
 import { FaGithub,  FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 function Profile() {
   return (
     <>
@@ -28,8 +29,9 @@ function Profile() {
                     <h2 className=" text-gray-300 mb-3">
                       Web Developer and Character Design
                     </h2>
-                    <h2 className=" mb-5 text-gray-300/70 max-sm:text-sm">
-                       mohammadjulhafizarola@gmail.com
+                    <h2 className=" mb-5 text-gray-300/70">
+                      
+                       juls.arola@gmail.com
                     </h2>
                     <div className="flex flex-wrap max-sm:justify-center">
                       <div className="flex">
