@@ -90,7 +90,7 @@ function ProjectComponent() {
               <div className="absolute bottom-8 left-0 right-0">
                 <div className="grid grid-cols-2 text-center mt-5">
                   <div>
-                    <a href="https://pokemon-api-project-lime.vercel.app/Gen1" target="_blank" className="bg-blue-500 rounded text-white px-3 py-1">
+                    <a href="https://pokemon-pokedex-lime.vercel.app/" target="_blank" className="bg-blue-500 rounded text-white px-3 py-1">
                       Live Demo
                     </a>
                   </div>
