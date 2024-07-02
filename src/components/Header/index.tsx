@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
-import ArolaPDF from "../../assets/Arola, Mohammad Jul Hafiz Resume.pdf"
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +22,7 @@ function Header() {
                 <Link to={"/project"} className="hover:text-white/100">PROJECT</Link>
               </li>
               <li >
-                <a href={ArolaPDF} download className="border px-2 rounded-full pointer-events-auto hover:text-white/100">
+                <a href='https://drive.google.com/file/d/1mKoi-CFLxwGscnUcM-48HBwwFA7IZjMq/view?usp=sharing' download className="border px-2 rounded-full pointer-events-auto hover:text-white/100">
                   Download CV
                 </a>
 
@@ -55,7 +54,7 @@ function Header() {
                 <Link to={"/project"} className="text-white/70">PROJECT</Link>
               </li>
               <li >
-                <a href={ArolaPDF} download className="mx-3 mb-3 border-2 px-4 rounded-full py-1 text-white/70">
+                <a href='https://drive.google.com/file/d/1mKoi-CFLxwGscnUcM-48HBwwFA7IZjMq/view?usp=sharing' download className="mx-3 mb-3 border-2 px-4 rounded-full py-1 text-white/70">
                   Download CV
                 </a>
               </li>

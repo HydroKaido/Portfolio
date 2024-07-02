@@ -29,7 +29,7 @@ function Profile() {
                     </h2>
                     <h2 className=" mb-5 text-gray-300/70">
                       
-                       julzarola@gmail.com
+                       julzhafiz@gmail.com
                     </h2>
                     <div className="flex flex-wrap max-sm:justify-center">
                       <div className="flex">
