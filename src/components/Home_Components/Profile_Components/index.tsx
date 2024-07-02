@@ -29,7 +29,7 @@ function Profile() {
                     </h2>
                     <h2 className=" mb-5 text-gray-300/70">
                       
-                       juls.arola@gmail.com
+                       julzarola@gmail.com
                     </h2>
                     <div className="flex flex-wrap max-sm:justify-center">
                       <div className="flex">
@@ -51,7 +51,7 @@ function Profile() {
                         |
                       </div>
                       <div className="flex">
-                        <a href="https://www.instagram.com/hydrotolerance/" target="_black" className="flex">
+                        <a href="https://www.instagram.com/hydrokaido/" target="_black" className="flex">
                           <FaInstagram className="text-2xl me-2 text-rose-600"/>
                           <h2 className="text-gray-300/70 max-sm:hidden">Instagram</h2>
                         </a>
