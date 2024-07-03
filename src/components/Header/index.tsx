@@ -22,7 +22,7 @@ function Header() {
                 <Link to={"/project"} className="hover:text-white/100">PROJECT</Link>
               </li>
               <li >
-                <a href='https://drive.google.com/file/d/1mKoi-CFLxwGscnUcM-48HBwwFA7IZjMq/view?usp=sharing' target="_blank" className="border px-2 rounded-full pointer-events-auto hover:text-white/100">
+                <a href='https://drive.google.com/file/d/1MHMM5NVUNZ2Ofq14j8D8NDK987vfVoT-/view?usp=sharing' target="_blank" className="border px-2 rounded-full pointer-events-auto hover:text-white/100">
                   Download CV
                 </a>
 
@@ -54,7 +54,7 @@ function Header() {
                 <Link to={"/project"} className="text-white/70">PROJECT</Link>
               </li>
               <li >
-                <a href='https://drive.google.com/file/d/1mKoi-CFLxwGscnUcM-48HBwwFA7IZjMq/view?usp=sharing' target="_blank" className="mx-3 mb-3 border-2 px-4 rounded-full py-1 text-white/70">
+                <a href='https://drive.google.com/file/d/1MHMM5NVUNZ2Ofq14j8D8NDK987vfVoT-/view?usp=sharing' target="_blank" className="mx-3 mb-3 border-2 px-4 rounded-full py-1 text-white/70">
                   Download CV
                 </a>
               </li>
