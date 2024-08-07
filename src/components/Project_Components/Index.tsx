@@ -10,7 +10,7 @@ interface ProjectLink {
 }
 interface Project {
     title: string,
-    image: string,
+    image: string[],
     value: string,
     categories: string,
     stack: JSX.Element,
@@ -20,7 +20,7 @@ interface Project {
 export const projects: Project[] =[
     {
         title: 'Zephyderm',
-        image: Zephyderm,
+        image: [Zephyderm, Kali],
         categories: 'Capstone/Thesis',
         value: 'Appoitment and Client Monitoring',
         stack:
@@ -42,7 +42,7 @@ export const projects: Project[] =[
     },
     {
         title: 'Naval Conquest',
-        image: NavalConquest,
+        image: [NavalConquest],
         categories: 'Multiplayer Games',
         value: 'Ping-Pong Games',
         stack:
@@ -64,7 +64,7 @@ export const projects: Project[] =[
     },
     {
         title: 'Kali: The Darkness Arrive',
-        image: Kali,
+        image: [Kali],
         categories: 'Player vs. Player Game',
         value: 'Appoitment and Client Monitoring',
         stack:
@@ -86,7 +86,7 @@ export const projects: Project[] =[
     },
     {
         title: 'Pokemon API',
-        image: Pokemon,
+        image: [Pokemon],
         categories: 'Hobbies',
         value: 'Appoitment and Client Monitoring',
         stack:
@@ -105,7 +105,7 @@ export const projects: Project[] =[
     },
     {
         title: 'E-Tsibug',
-        image: Tsibug,
+        image: [Tsibug],
         categories: 'Mobile Application',
         value: 'Appoitment and Client Monitoring',
         stack:

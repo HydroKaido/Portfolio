@@ -66,13 +66,6 @@ function Sidebar() {
                   <FaCertificate className="mr-2" />
                   CERTIFICATIONS
                 </a>
-                {/* <a
-                href="#explorations"
-                className={`flex items-center hover:underline`}
-              >
-                <FaCompass className="mr-2" />
-                EXPLORATIONS
-              </a> */}
               </div>
             </ScrollSpy>
           </div>
@@ -142,13 +135,6 @@ function Sidebar() {
                     <FaCertificate className="mr-2" />
                     CERTIFICATIONS
                   </a>
-                  {/* <a
-                href="#explorations"
-                className={`flex items-center hover:underline`}
-              >
-                <FaCompass className="mr-2" />
-                EXPLORATIONS
-              </a> */}
                 </div>
               </ScrollSpy>
               </div>
