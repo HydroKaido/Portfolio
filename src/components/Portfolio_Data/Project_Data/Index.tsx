@@ -1,9 +1,8 @@
-import Zephyderm from "../../assets/Zephyderm Design.jpg";
-import NavalConquest from "../../assets/Naval Conquest.png";
-import Pokemon from "../../assets/Pokemon-Pokedex.jpg";
-import Tsibug from "../../assets/E-tsibug.jpg";
-import Kali from "../../assets/Kali.png"
-
+import Zephyderm from "../../../assets/Zephyderm Design.jpg";
+import NavalConquest from "../../../assets/Naval Conquest.png";
+import Pokemon from "../../../assets/Pokemon-Pokedex.jpg";
+import Tsibug from "../../../assets/E-tsibug.jpg";
+import Kali from "../../../assets/Kali.png"
 interface ProjectLink {
     name: string,
     description: string,
