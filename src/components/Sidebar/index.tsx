@@ -8,6 +8,7 @@ import {
   FaCertificate,
 } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
 
 function Sidebar() {
   return (
@@ -26,8 +27,8 @@ function Sidebar() {
           </div>
           <div className=" space-y-6 text-white/90">
             <div className="fontTitle ">
-              <p className="text-lg font-bold">MOHAMMAD AROLA</p>
-              <p className="text-lg space-y-2">FULLSTACK DEVELOPER</p>
+              <p className="text-xl font-bold">MOHAMMAD AROLA</p>
+              <p className="flex items-center "><MdEmail className="me-2"/> juls.arola@gmail.com</p>
             </div>
             <ScrollSpy activeClass="nav-active">
               <div className="space-y-6">
@@ -73,7 +74,7 @@ function Sidebar() {
       </div>
       <div className=" text-white/90 fixed z-50 top-0 p-4 ">
         <input type="checkbox" id="checkMenu" className="hidden peer" />
-        <label htmlFor="checkMenu" className="md:hidden ">
+        <label htmlFor="checkMenu" className="lg:hidden ">
           <IoMdMenu className="cursor-pointer text-[35px] text-white rounded-full p-2 bg-blue-600 shadow-lg shadow-blue-500/50" />
         </label>
 
@@ -95,8 +96,8 @@ function Sidebar() {
               </div>
               <div>
               <div className="fontTitle mb-5">
-                <p className="text-lg font-bold">MOHAMMAD AROLA</p>
-                <p className="text-lg space-y-2">FULLSTACK DEVELOPER</p>
+                <p className="text-xl font-bold">MOHAMMAD AROLA</p>
+                <p className="flex items-center "><MdEmail className="me-2"/> juls.arola@gmail.com</p>
               </div>
               <ScrollSpy activeClass="nav-active">
                 <div className="space-y-6">

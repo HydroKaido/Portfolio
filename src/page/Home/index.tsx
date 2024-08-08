@@ -16,16 +16,16 @@ const SkillComponents = lazy(
   () => import("../../components/Page_Component/Skill_Components")
 );
 const CertificateComponents = lazy(
-  () => import("../../components/Page_Component/Skill_Components")
+  () => import("../../components/Page_Component/Certificate_Components")
 );
-/* const DelayedComponents = (promise: any) => {
-  return new Promise((resolve) => {
-    setTimeout(resolve, 5000);
-  }).then(() => promise);
-}; */
+const GraphicsComponents = lazy(
+  () => import("../../components/Page_Component/Graphics_Components")
+);
+
 export function Home() {
   const [modal, setModal] = useState(false);
-  const [selecterproject, setProject] = useState([]);
+  const [types, setTypes] = useState('Web');
+  const [selecterproject, setSelectedProject] = useState([]);
   useEffect(() => {
     const reveals: string[] = [
       "#experience",
@@ -66,7 +66,7 @@ export function Home() {
     ScrollReveal().reveal(".blueCirleEffects", config[2]);
   }, []);
   const visibility = (project: any) => {
-    setProject(project);
+    setSelectedProject(project);
     setModal(true);
   };
 
@@ -121,17 +121,37 @@ export function Home() {
             <h2 className="text-3xl  font-bold mb-4 text-center text-blue-400">
               PROJECTS
             </h2>
-            <p className="text-white/70 mb-4 mx-auto text-center max-w-[600px]">
+            <p className="text-white/70 mb-6 mx-auto text-center max-w-[600px]">
               Below are some of the projects I've worked on, showcasing my
               skills and experience in web development, design, and more.
             </p>
+            <div className="flex justify-center items-center mb-6 text-white/90">
+              <div className="flex-wrap flex justify-center items-center">
+                <button className={`border px-4 py-2 hover:bg-blue-500 ${types === 'Web' ? 'bg-blue-500' : ''}`} onClick={()=> {setTypes('Web')}}>System</button>
+                <button className={`border px-4 py-2 hover:bg-blue-500 ${types === 'Graphics' ? 'bg-blue-500' : ''}`} onClick={()=> {setTypes('Graphics')}}>Graphics</button>
+                <button className={`border px-4 py-2 hover:bg-blue-500 ${types === 'Illustration' ? 'bg-blue-500' : ''}`} onClick={()=> {setTypes('Illustration')}}>Illustration</button>
+                
+              </div>
+            </div>
+            {
+            types && 
             <Suspense fallback={<>Loading</>}>
               <ProjectComponents
                 visibility={(project: any) => visibility(project)}
+                types={types}
               />
             </Suspense>
+            }
+            {
+            types && 
+            <Suspense fallback={<>Loading</>}>
+              <GraphicsComponents
+                visibility={(project: any) => visibility(project)}
+                types={types}
+              />
+            </Suspense>
+            }
           </div>
-
           <div className="mx-8 mb-20" id="skills">
             <h2 className="text-3xl  font-bold mb-4 text-center text-blue-400">
               SKILLS
