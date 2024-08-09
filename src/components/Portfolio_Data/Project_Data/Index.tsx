@@ -35,6 +35,7 @@ interface ProjectLink {
     description: any,
 }
 interface Project {
+    id: any;
     title: string,
     image: string[],
     value: string,
@@ -45,6 +46,7 @@ interface Project {
 }
 
 interface Graphics {
+    id: any;
     title: string,
     image: string[],
     value: string,
@@ -52,7 +54,7 @@ interface Graphics {
 }
 
 export const projects: Project[] = [
-    {
+    {   id: 1,
         title: 'Zephyderm',
         image: [Zephyderm, Kali],
         categories: 'Capstone/Thesis',
@@ -76,6 +78,7 @@ export const projects: Project[] = [
         }
     },
     {
+        id: 2,
         title: 'Naval Conquest',
         image: [NavalConquest],
         categories: 'Multiplayer Games',
@@ -99,6 +102,7 @@ export const projects: Project[] = [
         }
     },
     {
+        id: 3,
         title: 'Kali: The Darkness Arrive',
         image: [Kali],
         categories: 'Player vs. Player Game',
@@ -122,6 +126,7 @@ export const projects: Project[] = [
         }
     },
     {
+        id: 4,
         title: 'Pokemon API',
         image: [Pokemon],
         categories: 'Hobbies',
@@ -142,6 +147,7 @@ export const projects: Project[] = [
         }
     },
     {
+        id: 5,
         title: 'E-Tsibug',
         image: [Tsibug],
         categories: 'Mobile Application',
@@ -165,127 +171,147 @@ export const projects: Project[] = [
 ]
 
 export const graphics:Graphics[] =  [
-    {
+    {   id: 1,
         title: 'E-Tsibug',
         image: [Calendar],
         value: 'Appoitment and Client Monitoring',
         type: 'Graphics',
     },
     {
+        id: 2,
         title: 'E-Tsibug',
         image: [DaisyCotton],
         value: 'Appoitment and Client Monitoring',
         type: 'Graphics',
     },
     {
+        id: 3,
         title: 'E-Tsibug',
         image: [AdamsonCotton],
         value: 'Appoitment and Client Monitoring',
         type: 'Graphics',
     },
     {
+        id: 4,
         title: 'E-Tsibug',
         image: [AdamsonCottonBalls],
         value: 'Appoitment and Client Monitoring',
         type: 'Graphics',
     },
     {
+        id: 5,
         title: 'E-Tsibug',
         image: [Sanitex],
         value: 'Appoitment and Client Monitoring',
         type: 'Graphics',
     },
     {
+        id: 6,
         title: 'E-Tsibug',
         image: [DaisyPoster],
         value: 'Appoitment and Client Monitoring',
         type: 'Graphics',
     },
     {
+        id: 7,
         title: 'E-Tsibug',
         image: [AdamsonPoster],
         value: 'Appoitment and Client Monitoring',
         type: 'Graphics',
     },
     {
+        id: 8,
         title: 'E-Tsibug',
         image: [BatisteStrawberry],
         value: 'Appoitment and Client Monitoring',
         type: 'Graphics',
     },
     {
+        id: 9,
         title: 'E-Tsibug',
         image: [BatisteOriginal],
         value: 'Appoitment and Client Monitoring',
         type: 'Graphics',
     },
     {
+        id: 10,
         title: 'E-Tsibug',
         image: [Samus],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
     {
+        id: 11,
         title: 'E-Tsibug',
         image: [Tifa],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
     {
+        id: 12,
         title: 'E-Tsibug',
         image: [Barret],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
     {
+        id: 13,
         title: 'E-Tsibug',
         image: [Aegiz],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
     {
+        id: 14,
         title: 'E-Tsibug',
         image: [Cloud],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
     {
+        id: 15,
         title: 'E-Tsibug',
         image: [Alexandria],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
     {
+        id: 16,
         title: 'E-Tsibug',
         image: [Kamikaze],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
     {
+        id: 17,
         title: 'E-Tsibug',
         image: [Fortune],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
     {
+        id: 18,
         title: 'E-Tsibug',
         image: [Filia],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
     {
+        id: 19,
         title: 'E-Tsibug',
         image: [Genjorou],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
     {
+        id: 20,
         title: 'E-Tsibug',
         image: [Yor],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
     {
+        id: 21,
         title: 'E-Tsibug',
         image: [Lily],
         value: 'Appoitment and Client Monitoring',
@@ -293,18 +319,21 @@ export const graphics:Graphics[] =  [
     },
 
     {
+        id: 22,
         title: 'E-Tsibug',
         image: [Third],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
     {
+        id: 23,
         title: 'E-Tsibug',
         image: [Kamikaze2x2],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
     {
+        id: 24,
         title: 'E-Tsibug',
         image: [Golem],
         value: 'Appoitment and Client Monitoring',

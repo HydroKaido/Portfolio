@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Net from "../../assets/Net1.png";
 import ScrollReveal from "scrollreveal";
 import ModalProject from "../../components/Modal_Projects";
+
 const ExperienceComponents = lazy(
   () => import("../../components/Page_Component/Experience_Components")
 );
@@ -24,7 +25,8 @@ const GraphicsComponents = lazy(
 
 export function Home() {
   const [modal, setModal] = useState(false);
-  const [types, setTypes] = useState('Web');
+  const [types, setTypes] = useState("Web");
+  const [loading, setLoading] = useState(false);
   const [selecterproject, setSelectedProject] = useState([]);
   useEffect(() => {
     const reveals: string[] = [
@@ -69,6 +71,13 @@ export function Home() {
     setSelectedProject(project);
     setModal(true);
   };
+  const handleLoading = (types: string) =>{
+      setLoading(true);
+      setTypes(types)
+      setTimeout(() => {
+        setLoading(false);
+      },1000)
+  }
 
   return (
     <>
@@ -127,30 +136,62 @@ export function Home() {
             </p>
             <div className="flex justify-center items-center mb-6 text-white/90">
               <div className="flex-wrap flex justify-center items-center">
-                <button className={`border px-4 py-2 hover:bg-blue-500 ${types === 'Web' ? 'bg-blue-500' : ''}`} onClick={()=> {setTypes('Web')}}>System</button>
-                <button className={`border px-4 py-2 hover:bg-blue-500 ${types === 'Graphics' ? 'bg-blue-500' : ''}`} onClick={()=> {setTypes('Graphics')}}>Graphics</button>
-                <button className={`border px-4 py-2 hover:bg-blue-500 ${types === 'Illustration' ? 'bg-blue-500' : ''}`} onClick={()=> {setTypes('Illustration')}}>Illustration</button>
-                
+                <button
+                  className={`border px-4 py-2 hover:bg-blue-500 ${
+                    types === "Web" ? "bg-blue-500" : ""
+                  }`}
+                  onClick={() => {
+                    handleLoading('Web');
+                  }}
+                >
+                  System
+                </button>
+                <button
+                  className={`border px-4 py-2 hover:bg-blue-500 ${
+                    types === "Graphics" ? "bg-blue-500" : ""
+                  }`}
+                  onClick={() => {
+                    handleLoading('Graphics');
+                  }}
+                >
+                  Graphics
+                </button>
+                <button
+                  className={`border px-4 py-2 hover:bg-blue-500 ${
+                    types === "Illustration" ? "bg-blue-500" : ""
+                  }`}
+                  onClick={() => {
+                    handleLoading('Illustration');
+                  }}
+                >
+                  Illustration
+                </button>
               </div>
             </div>
-            {
-            types && 
             <Suspense fallback={<>Loading</>}>
-              <ProjectComponents
-                visibility={(project: any) => visibility(project)}
-                types={types}
-              />
-            </Suspense>
-            }
             {
-            types && 
-            <Suspense fallback={<>Loading</>}>
-              <GraphicsComponents
-                visibility={(project: any) => visibility(project)}
-                types={types}
-              />
-            </Suspense>
+              loading ? (
+                <div className="flex justify-center items-center h-[20vh]">
+                  <div className="rounded-full h-10 w-10 bg-blue-600 animate-ping"></div>
+                  <div className="rounded-full h-10 w-10 bg-blue-600 animate-ping"></div>
+                  <div className="rounded-full h-10 w-10 bg-blue-600 animate-ping"></div>
+                </div>
+              ): (
+                types === "Web" ?  (
+                  <ProjectComponents
+                    visibility={(project: any) => visibility(project)}
+                    types={types}
+                  />
+                ) : (
+                  <GraphicsComponents
+                    visibility={(project: any) => visibility(project)}
+                    types={types}
+                  />
+                )
+              )
             }
+              
+            </Suspense>
           </div>
           <div className="mx-8 mb-20" id="skills">
             <h2 className="text-3xl  font-bold mb-4 text-center text-blue-400">
