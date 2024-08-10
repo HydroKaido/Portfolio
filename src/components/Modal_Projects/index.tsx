@@ -9,40 +9,30 @@ interface Modal {
 function ModalProject({ project, onClose }: Modal) {
   const [slide, setSlide] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(
-    project.type === 'Web' ? projects.findIndex((element) => element.id === project.id) : graphics.findIndex((element) => element.id === project.id)
+    project.type === "Web"
+      ? projects.findIndex((element) => element.id === project.id)
+      : graphics.findIndex((element) => element.id === project.id)
   );
 
-  const currentProject = project.type === 'Web' ? projects[currentSlide] : graphics[currentSlide];
+  const graphicsId = projects.findIndex((element) => element.id === project.id)
+    ? graphics.find((element) => element.id === project.id)
+    : null;
+  const graphicsIdValue = graphicsId ? graphicsId.id : null;
 
-  const handleNextSlide = () => {
-    if (slide < currentProject.image.length - 1) {
-      setSlide(slide + 1);
-    }
-  };
+  const countImage = project.type === "Web" ? projects.length : graphics.length;
+  const currentProject =
+    project.type === "Web" ? projects[currentSlide] : graphics[currentSlide];
 
   const handlePrevSlide = () => {
-    if (slide > 0) {
-      setSlide(slide - 1);
-    }
+    setCurrentSlide(currentSlide - 1);
+    console.log(countImage);
+    console.log(project.type.length || project.type === "Graphics");
   };
-
-  const handleNextProject = () => {
-    const maxSlides: { [key: string]: number } = {
-      Web: 4,
-      Graphics: 7,
-      Illustration: 23
-    };
-    if (currentSlide < maxSlides[project.type]) {
-      setCurrentSlide(currentSlide + 1);
-      setSlide(0);
-    }
-  };
-
-  const handlePrevProject = () => {
-    if (currentSlide > 0) {
-      setCurrentSlide(currentSlide - 1);
-      setSlide(0);
-    }
+  const handleNextSlide = () => {
+    console.log(currentSlide);
+    console.log(project.type.length);
+    setCurrentSlide(currentSlide + 1);
+    setSlide(0);
   };
 
   return (
@@ -56,8 +46,12 @@ function ModalProject({ project, onClose }: Modal) {
           onClick={(event) => event.stopPropagation()}
         >
           <div className="flex justify-between">
-            <h2 className="text-white/90 text-lg font-medium">{project.title}</h2>
-            <div className="text-white/90 cursor-pointer" onClick={onClose}>&#x2715;</div>
+            <h2 className="text-white/90 text-lg font-medium">
+              {project.title}
+            </h2>
+            <div className="text-white/90 cursor-pointer" onClick={onClose}>
+              &#x2715;
+            </div>
           </div>
 
           <div className="flex justify-center items-center">
@@ -70,27 +64,32 @@ function ModalProject({ project, onClose }: Modal) {
             </div>
           </div>
           <div className="flex justify-between items-center mt-4">
-
             <div>
               <button
-                onClick={handlePrevProject}
+                onClick={() => {
+                  handlePrevSlide();
+                }}
                 className={`px-4 py-2 text-xl ${
-                  (project.type === 'Web' && currentSlide === 0) || 
-                  (project.type === 'Graphics' && currentSlide === 0) ||
-                  (project.type === 'Illustration' && 10 >= currentProject.id)
+                  (project.type === "Web" && currentSlide === 0) ||
+                  (project.type === "Graphics" && currentSlide === 0) ||
+                  (project.type === "Illustration" &&
+                    graphicsIdValue >= currentProject.id)
                     ? "text-gray-500/30 cursor-not-allowed"
                     : "text-white/90"
                 }`}
                 disabled={
-                  (project.type === 'Web' && currentSlide === 0) || 
-                  (project.type === 'Graphics' && currentSlide === 0) ||
-                  (project.type === 'Illustration' && 10 >= currentProject.id)
+                  (project.type === "Web" && currentSlide === 0) ||
+                  (project.type === "Graphics" && currentSlide === 0) ||
+                  (project.type === "Illustration" &&
+                    graphicsIdValue >= currentProject.id)
                 }
               >
                 &#60;&#60;
               </button>
               <button
-                onClick={handlePrevSlide}
+                onClick={() => {
+                  setSlide(slide - 1);
+                }}
                 disabled={slide === 0}
                 className={`px-4 py-2 text-xl ${
                   slide === 0
@@ -107,7 +106,9 @@ function ModalProject({ project, onClose }: Modal) {
             </div>
             <div>
               <button
-                onClick={handleNextSlide}
+                onClick={() => {
+                  setSlide(slide + 1);
+                }}
                 disabled={slide >= currentProject.image.length - 1}
                 className={`px-4 py-2 text-xl ${
                   slide >= currentProject.image.length - 1
@@ -118,10 +119,22 @@ function ModalProject({ project, onClose }: Modal) {
                 &#62;
               </button>
               <button
-                onClick={handleNextProject}
-                disabled={currentSlide >= (project.type === 'Web' ? 4 : (project.type === 'Graphics' ? 7 : 23))}
+                onClick={() => {
+                  handleNextSlide();
+                }}
+                disabled={
+                  (project.type === "Web" && currentProject.id >= countImage) ||
+                  (project.type === "Graphics" &&
+                    currentProject.id >= project.type.length + 1) ||
+                  (project.type === "Illustration" &&
+                    currentProject.id >= countImage)
+                }
                 className={`px-4 py-2 text-xl ${
-                  currentSlide >= (project.type === 'Web' ? 4 : (project.type === 'Graphics' ? 7 : 23))
+                  (project.type === "Web" && currentProject.id >= countImage) ||
+                  (project.type === "Graphics" &&
+                    currentProject.id >= project.type.length + 1) ||
+                  (project.type === "Illustration" &&
+                    currentProject.id >= countImage)
                     ? "text-gray-500/30 cursor-not-allowed"
                     : "text-white/90 "
                 }`}
@@ -129,7 +142,6 @@ function ModalProject({ project, onClose }: Modal) {
                 &#62;&#62;
               </button>
             </div>
-
           </div>
         </div>
       </div>
