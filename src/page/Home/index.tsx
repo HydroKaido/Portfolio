@@ -42,10 +42,7 @@ export function Home() {
         const loadImg = new Image();
         loadImg.src = project.image[0];
         // wait 2 seconds to simulate loading time
-        loadImg.onload = () =>
-          setTimeout(() => {
-            resolve(project.image[0]);
-          }, 3000);
+        loadImg.onload = () => resolve(project.image[0]);
 
         loadImg.onerror = (err) => reject(err);
       });
