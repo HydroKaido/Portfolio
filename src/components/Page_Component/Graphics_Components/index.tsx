@@ -1,11 +1,10 @@
-import { graphics } from "../../Portfolio_Data/Project_Data/Index";
-
 interface Props {
   visibility: any;
   types: any;
+  graphics: any[];
 }
 
-function GraphicsComponents({ visibility, types }: Props) {
+function GraphicsComponents({ visibility, types, graphics }: Props) {
   return (
     <div className="flex items-center justify-center w-full h-full">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-4">

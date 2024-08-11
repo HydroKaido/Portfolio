@@ -14,18 +14,12 @@ function ModalProject({ project, onClose }: Modal) {
       : graphics.findIndex((element) => element.id === project.id)
   );
 
-  const graphicsId = projects.findIndex((element) => element.id === project.id)
-    ? graphics.find((element) => element.id === project.id)
-    : null;
-  const graphicsIdValue = graphicsId ? graphicsId.id : null;
-
   const countImage = project.type === "Web" ? projects.length : graphics.length;
   const currentProject =
     project.type === "Web" ? projects[currentSlide] : graphics[currentSlide];
 
   const handlePrevSlide = () => {
     setCurrentSlide(currentSlide - 1);
-    console.log(countImage);
     console.log(project.type.length || project.type === "Graphics");
   };
   const handleNextSlide = () => {
@@ -47,7 +41,7 @@ function ModalProject({ project, onClose }: Modal) {
         >
           <div className="flex justify-between">
             <h2 className="text-white/90 text-lg font-medium">
-              {project.title}
+              {currentProject.title}
             </h2>
             <div className="text-white/90 cursor-pointer" onClick={onClose}>
               &#x2715;
@@ -73,15 +67,14 @@ function ModalProject({ project, onClose }: Modal) {
                   (project.type === "Web" && currentSlide === 0) ||
                   (project.type === "Graphics" && currentSlide === 0) ||
                   (project.type === "Illustration" &&
-                    graphicsIdValue >= currentProject.id)
+                    project.type.length - 2 >= currentProject.id)
                     ? "text-gray-500/30 cursor-not-allowed"
                     : "text-white/90"
                 }`}
                 disabled={
                   (project.type === "Web" && currentSlide === 0) ||
                   (project.type === "Graphics" && currentSlide === 0) ||
-                  (project.type === "Illustration" &&
-                    graphicsIdValue >= currentProject.id)
+                  (project.type === "Illustration" && project.type.length - 2 >= currentProject.id)
                 }
               >
                 &#60;&#60;

@@ -6,6 +6,10 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Net from "../../assets/Net1.png";
 import ScrollReveal from "scrollreveal";
 import ModalProject from "../../components/Modal_Projects";
+import {
+  projects,
+  graphics,
+} from "../../components/Portfolio_Data/Project_Data/Index";
 
 const ExperienceComponents = lazy(
   () => import("../../components/Page_Component/Experience_Components")
@@ -26,9 +30,34 @@ const GraphicsComponents = lazy(
 export function Home() {
   const [modal, setModal] = useState(false);
   const [types, setTypes] = useState("Web");
-  const [loading, setLoading] = useState(false);
   const [selecterproject, setSelectedProject] = useState([]);
+  const [imgsLoaded, setImgsLoaded] = useState(false);
+
+  //Code for render image first before it fully load the image
+  //https://codesandbox.io/s/react-image-preload-ptosn?file=/src/App.js
+
   useEffect(() => {
+    const loadImage = (project: any) => {
+      return new Promise((resolve, reject) => {
+        const loadImg = new Image();
+        loadImg.src = project.image[0];
+        // wait 2 seconds to simulate loading time
+        loadImg.onload = () =>
+          setTimeout(() => {
+            resolve(project.image[0]);
+          }, 3000);
+
+        loadImg.onerror = (err) => reject(err);
+      });
+    };
+
+    Promise.all(
+      projects.map((project) => loadImage(project)) ||
+        graphics.map((project) => loadImage(project))
+    )
+      .then(() => setImgsLoaded(true))
+      .catch((err) => console.log("Failed to load images", err));
+
     const reveals: string[] = [
       "#experience",
       "#project",
@@ -71,13 +100,6 @@ export function Home() {
     setSelectedProject(project);
     setModal(true);
   };
-  const handleLoading = (types: string) =>{
-      setLoading(true);
-      setTypes(types)
-      setTimeout(() => {
-        setLoading(false);
-      },1000)
-  }
 
   return (
     <>
@@ -141,7 +163,7 @@ export function Home() {
                     types === "Web" ? "bg-blue-500" : ""
                   }`}
                   onClick={() => {
-                    handleLoading('Web');
+                    setTypes("Web");
                   }}
                 >
                   System
@@ -151,7 +173,7 @@ export function Home() {
                     types === "Graphics" ? "bg-blue-500" : ""
                   }`}
                   onClick={() => {
-                    handleLoading('Graphics');
+                    setTypes("Graphics");
                   }}
                 >
                   Graphics
@@ -161,7 +183,7 @@ export function Home() {
                     types === "Illustration" ? "bg-blue-500" : ""
                   }`}
                   onClick={() => {
-                    handleLoading('Illustration');
+                    setTypes("Illustration");
                   }}
                 >
                   Illustration
@@ -169,28 +191,27 @@ export function Home() {
               </div>
             </div>
             <Suspense fallback={<>Loading</>}>
-            {
-              loading ? (
+              {imgsLoaded ? (
+                types === "Web" ? (
+                  <ProjectComponents
+                    visibility={(project: any) => visibility(project)}
+                    types={types}
+                    projects={projects}
+                  />
+                ) : types === "Graphics" || types === "Illustration" ? (
+                  <GraphicsComponents
+                    visibility={(project: any) => visibility(project)}
+                    types={types}
+                    graphics={graphics}
+                  />
+                ) : null
+              ) : (
                 <div className="flex justify-center items-center h-[20vh]">
                   <div className="rounded-full h-10 w-10 bg-blue-600 animate-ping"></div>
                   <div className="rounded-full h-10 w-10 bg-blue-600 animate-ping"></div>
                   <div className="rounded-full h-10 w-10 bg-blue-600 animate-ping"></div>
                 </div>
-              ): (
-                types === "Web" ?  (
-                  <ProjectComponents
-                    visibility={(project: any) => visibility(project)}
-                    types={types}
-                  />
-                ) : (
-                  <GraphicsComponents
-                    visibility={(project: any) => visibility(project)}
-                    types={types}
-                  />
-                )
-              )
-            }
-              
+              )}
             </Suspense>
           </div>
           <div className="mx-8 mb-20" id="skills">
@@ -221,41 +242,49 @@ export function Home() {
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl mb-6 text-center">Contact Me</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center justify-center">
                   <h2 className="text-lg mb-2">Gmail: juls.arola@gmail.com</h2>
                   <h2 className="text-lg">Number: +63 968 219 0167</h2>
                 </div>
                 <div className="hidden md:flex justify-center items-center">
                   <div className="border-l-2 border-white/60 h-full"></div>
                 </div>
-                <div className="flex flex-col items-center space-y-4">
-                  <a
-                    href="https://github.com/your-username"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-lg"
-                  >
-                    <FaGithub className="text-2xl" />
-                    <span>GitHub</span>
-                  </a>
-                  <a
-                    href="https://linkedin.com/in/your-profile"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-lg"
-                  >
-                    <FaLinkedin className="text-2xl" />
-                    <span>LinkedIn</span>
-                  </a>
-                  <a
-                    href="https://instagram.com/your-profile"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-lg"
-                  >
-                    <FaInstagram className="text-2xl" />
-                    <span>Instagram</span>
-                  </a>
+                <div className="flex justify-center items-center flex-col">
+                  <div className="flex justify-center space-x-5 mb-8">
+                    <a
+                      href="https://github.com/your-username"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-white/20 rounded-full h-10 w-10"
+                    >
+                      <FaGithub className="text-2xl" />
+                    </a>
+                    <a
+                      href="https://linkedin.com/in/your-profile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-white/20 rounded-full h-10 w-10"
+                    >
+                      <FaLinkedin className="text-2xl" />
+                    </a>
+                    <a
+                      href="https://instagram.com/your-profile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-white/20 rounded-full h-10 w-10"
+                    >
+                      <FaInstagram className="text-2xl" />
+                    </a>
+                  </div>
+                    <div className="flex justify-center items-center relative w-[180px] h-[45px] rounded-lg  overflow-hidden before:absolute before:top-[-150%] before:left-[-50%] before:right-[-50%] before:bottom-[-150%] before: before:bg-[conic-gradient(white,#3b82f6)] before:rounded-lg before:animate-spin-slow">
+                      <a
+                        href="https://drive.google.com/file/d/1JazlhFCCYZKzFiUWasMS_zQEllPUgQxx/view?usp=drive_link"
+                        className="bg-[#19171c] text-white/90 py-3 px-6 top-[1px] right-[1px] bottom-[1px] left-[1px] rounded-lg absolute flex justify-center items-center after:content-['_↗']"
+                        target="_blank"
+                      >
+                        Download CV
+                      </a>
+                    </div>
                 </div>
               </div>
             </div>

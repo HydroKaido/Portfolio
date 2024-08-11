@@ -1,15 +1,16 @@
 import { MdOutlineTouchApp } from "react-icons/md";
-import { projects } from "../../Portfolio_Data/Project_Data/Index";
+
 
 interface Props {
   visibility: any;
   types: any;
+  projects: any[];
 }
 
-function ProjectComponents({ visibility, types }: Props) {
+function ProjectComponents({ visibility, types, projects }: Props) {
   return (
     <>
-      <div className="grid gap-5 md:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2">
+      <div className="grid gap-5 md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2">
         {projects.map((project, index) =>
           types === project.type ? (
             <div
