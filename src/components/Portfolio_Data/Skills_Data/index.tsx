@@ -1,6 +1,6 @@
 import { FaFigma, FaHtml5, FaCss3Alt, FaReact, FaVuejs, FaLaravel  } from "react-icons/fa";
-import { IoLogoJavascript, IoLogoNodejs  } from "react-icons/io5";
-import { SiAdobephotoshop, SiAdobeillustrator, SiMongodb, SiExpress, SiUnity, SiAdobeaftereffects, SiMysql, SiTailwindcss, SiBootstrap, SiLivewire, SiCsharp, SiPhp, SiTypescript, SiPython  } from "react-icons/si";
+import { IoLogoJavascript, IoLogoNodejs, IoLogoIonic  } from "react-icons/io5";
+import { SiAdobephotoshop, SiAdobeillustrator, SiMongodb, SiAntdesign,  SiExpress, SiUnity, SiAdobeaftereffects, SiMysql, SiTailwindcss, SiBootstrap, SiLivewire, SiCsharp, SiPhp, SiTypescript, SiPython  } from "react-icons/si";
 
 export const designerTools = [
     {
@@ -95,5 +95,13 @@ export const frameworkDevTools = [
     {
         icons: <SiUnity  className="text-[43px]"/>,
         title: 'Unity'
+    },
+    {
+        icons: <IoLogoIonic  className="text-[43px]"/>,
+        title: 'Ionic'
+    },
+    {
+        icons: <SiAntdesign  className="text-[43px]"/>,
+        title: 'Ant Design'
     },
 ]

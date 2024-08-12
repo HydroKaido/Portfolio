@@ -116,15 +116,41 @@ export function Home() {
               <h2 className="textReveal text-4xl font-bold  tracking-wider text-white/90 md:mb-14 max-md:mb-8 text-[3rem] md:text-[4rem] lg:text-[5rem]">
                 PORTFOLIO
               </h2>
-              <p className=" textReveal text-lg text-white/70 max-w-[700px] mx-auto mb-14 ">
+              <p className=" textReveal text-lg text-white/70 max-w-[700px] mx-auto ">
                 Take a look at my projects, the tech I use, and the experience
                 I've gained along the way. It's all here to show how much I love
                 what I do.
               </p>
+              <div className=" textReveal flex justify-center space-x-8 mt-8 mb-14 text-white/90">
+                    <a
+                      href="https://github.com/your-username"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-blue-500 rounded-full h-10 w-10 hover:bg-blue-500 transition duration-300"
+                    >
+                      <FaGithub className="text-2xl" />
+                    </a>
+                    <a
+                      href="https://linkedin.com/in/your-profile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-blue-500 rounded-full h-10 w-10 hover:bg-blue-500  transition duration-300"
+                    >
+                      <FaLinkedin className="text-2xl" />
+                    </a>
+                    <a
+                      href="https://instagram.com/your-profile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-blue-500 rounded-full h-10 w-10 hover:bg-blue-500  transition duration-300"
+                    >
+                      <FaInstagram className="text-2xl" />
+                    </a>
+                  </div>
               <div className="textReveal relative w-[180px] h-[45px] rounded-lg top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden before:absolute before:top-[-150%] before:left-[-50%] before:right-[-50%] before:bottom-[-150%] before: before:bg-[conic-gradient(white,#3b82f6)] before:rounded-lg before:animate-spin-slow">
                 <a
                   href="https://drive.google.com/file/d/1JazlhFCCYZKzFiUWasMS_zQEllPUgQxx/view?usp=drive_link"
-                  className="bg-[#19171c] text-white/90 py-3 px-6 top-[1px] right-[1px] bottom-[1px] left-[1px] rounded-lg absolute flex justify-center items-center after:content-['_↗']"
+                  className="bg-[#19171c] text-white/90 py-3 px-6 top-[1px] right-[1px] bottom-[1px] left-[1px] rounded-lg absolute flex justify-center items-center after:content-['_↗'] hover:bg-blue-500  transition duration-300"
                   target="_blank"
                 >
                   Download CV
@@ -235,7 +261,7 @@ export function Home() {
               <CertificateComponents />
             </Suspense>
           </div>
-          <div id="contacts" className="w-full bg-black/40 text-white/90 p-5">
+          <div id="contacts" className="w-full bg-black/40 text-white/90 p-5 textReveal">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl mb-6 text-center">Contact Me</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -246,13 +272,13 @@ export function Home() {
                 <div className="hidden md:flex justify-center items-center">
                   <div className="border-l-2 border-white/60 h-full"></div>
                 </div>
-                <div className="flex justify-center items-center flex-col">
+                <div className="flex justify-center items-center flex-col ">
                   <div className="flex justify-center space-x-5 mb-8">
                     <a
                       href="https://github.com/your-username"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-white/20 rounded-full h-10 w-10"
+                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-white/20 rounded-full h-10 w-10 hover:bg-blue-500  transition duration-300"
                     >
                       <FaGithub className="text-2xl" />
                     </a>
@@ -260,7 +286,7 @@ export function Home() {
                       href="https://linkedin.com/in/your-profile"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-white/20 rounded-full h-10 w-10"
+                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-white/20 rounded-full h-10 w-10 hover:bg-blue-500  transition duration-300"
                     >
                       <FaLinkedin className="text-2xl" />
                     </a>
@@ -268,7 +294,7 @@ export function Home() {
                       href="https://instagram.com/your-profile"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-white/20 rounded-full h-10 w-10"
+                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-white/20 rounded-full h-10 w-10 hover:bg-blue-500  transition duration-300"
                     >
                       <FaInstagram className="text-2xl" />
                     </a>
@@ -276,7 +302,7 @@ export function Home() {
                     <div className="flex justify-center items-center relative w-[180px] h-[45px] rounded-lg  overflow-hidden before:absolute before:top-[-150%] before:left-[-50%] before:right-[-50%] before:bottom-[-150%] before: before:bg-[conic-gradient(white,#3b82f6)] before:rounded-lg before:animate-spin-slow">
                       <a
                         href="https://drive.google.com/file/d/1JazlhFCCYZKzFiUWasMS_zQEllPUgQxx/view?usp=drive_link"
-                        className="bg-[#19171c] text-white/90 py-3 px-6 top-[1px] right-[1px] bottom-[1px] left-[1px] rounded-lg absolute flex justify-center items-center after:content-['_↗']"
+                        className="bg-[#19171c] text-white/90 py-3 px-6 top-[1px] right-[1px] bottom-[1px] left-[1px] hover:bg-blue-500  transition duration-300 rounded-lg absolute flex justify-center items-center after:content-['_↗']"
                         target="_blank"
                       >
                         Download CV
