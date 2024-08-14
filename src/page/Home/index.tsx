@@ -76,9 +76,10 @@ export function Home() {
         interval: 600,
       },
       {
-        delay: 1500,
-        duration: 1500,
+        delay: 1000,
+        duration: 1000,
         origin: "center",
+        interval: 500,
       },
       {
         delay: 300,
@@ -106,55 +107,35 @@ export function Home() {
           <div className="relative w-full h-[50em] mb-14 overflow-hidden">
             <div className="absolute w-full h-full sideblurred z-10"></div>
             <div
-              className={`w-full h-[50em] flex justify-center items-center bg-cover bg-center absolute z-0`}
+              className={`blueCirleEffects w-full h-[50em] flex justify-center items-center bg-cover bg-center absolute z-0`}
               style={{ backgroundImage: `url(${Net})`, opacity: 0.5 }}
             ></div>
             <div className="blueEffects absolute bg-[radial-gradient(ellipse_at_center,_rgb(59,_130,_246,_0.4),_transparent_70%)] w-[40%] h-40 rounded-full rotate-45 top-10 -left-56"></div>
             <div className="blueEffects absolute bg-[radial-gradient(ellipse_at_center,_rgb(217,_70,_239,_0.4),_transparent_70%)] w-[40%] h-40 rounded-full rotate-45 -top-0 right-0 transform translate-x-[40%]"></div>
-            <div className="text-center absolute z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ">
-              <div className="blueCirleEffects absolute -z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px]  md:h-[500px] md:w-[500px] lg:h-[650px] lg:w-[650px]  bg-[radial-gradient(ellipse_at_center,_rgb(59,_130,_246,_0.2),_transparent_70%)] rounded-full "></div>
-              <h2 className="textReveal text-4xl font-bold  tracking-wider text-white/90 md:mb-14 max-md:mb-8 text-[3rem] md:text-[4rem] lg:text-[5rem]">
+            <div className="text-center absolute z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+              <div className="blueCirleEffects absolute -z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px] md:h-[500px] md:w-[500px] lg:h-[650px] lg:w-[650px] bg-[radial-gradient(ellipse_at_center,_rgb(59,_130,_246,_0.2),_transparent_70%)] rounded-full"></div>
+              <h2 className="textReveal block text-xl md:text-2xl lg:text-3xl font-light tracking-widest text-white/70 md:mb-10 max-md:mb-8">
+                Hi, I'm Mohammad Arola
+              </h2>
+              <h2 className="textReveal text-4xl font-bold tracking-wider text-white/90 md:mb-14 max-md:mb-8 text-[3rem] md:text-[4rem] lg:text-[5rem]">
                 PORTFOLIO
               </h2>
-              <p className=" textReveal text-lg text-white/70 max-w-[700px] mx-auto ">
+              <p className="textReveal text-lg text-white/70 max-w-[700px] mx-auto">
                 Take a look at my projects, the tech I use, and the experience
                 I've gained along the way. It's all here to show how much I love
                 what I do.
               </p>
-              <div className=" textReveal flex justify-center space-x-8 mt-8 mb-14 text-white/90">
-                    <a
-                      href="https://github.com/your-username"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-blue-500 rounded-full h-10 w-10 hover:bg-blue-500 transition duration-300"
-                    >
-                      <FaGithub className="text-2xl" />
-                    </a>
-                    <a
-                      href="https://linkedin.com/in/your-profile"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-blue-500 rounded-full h-10 w-10 hover:bg-blue-500  transition duration-300"
-                    >
-                      <FaLinkedin className="text-2xl" />
-                    </a>
-                    <a
-                      href="https://instagram.com/your-profile"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-blue-500 rounded-full h-10 w-10 hover:bg-blue-500  transition duration-300"
-                    >
-                      <FaInstagram className="text-2xl" />
-                    </a>
-                  </div>
-              <div className="textReveal relative w-[180px] h-[45px] rounded-lg top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden before:absolute before:top-[-150%] before:left-[-50%] before:right-[-50%] before:bottom-[-150%] before: before:bg-[conic-gradient(white,#3b82f6)] before:rounded-lg before:animate-spin-slow">
-                <a
-                  href="https://drive.google.com/file/d/1JazlhFCCYZKzFiUWasMS_zQEllPUgQxx/view?usp=drive_link"
-                  className="bg-[#19171c] text-white/90 py-3 px-6 top-[1px] right-[1px] bottom-[1px] left-[1px] rounded-lg absolute flex justify-center items-center after:content-['_↗'] hover:bg-blue-500  transition duration-300"
-                  target="_blank"
-                >
-                  Download CV
-                </a>
+
+              <div className="textReveal relative mt-10 flex justify-center">
+                <div className="relative w-[180px] h-[45px] rounded-lg overflow-hidden before:absolute before:top-[-150%] before:left-[-50%] before:right-[-50%] before:bottom-[-150%] before:bg-[conic-gradient(white,#3b82f6)] before:rounded-lg before:animate-spin-slow">
+                  <a
+                    href="https://drive.google.com/file/d/1JazlhFCCYZKzFiUWasMS_zQEllPUgQxx/view?usp=drive_link"
+                    className="bg-[#19171c] text-white/90 py-3 px-6 top-[1px] right-[1px] bottom-[1px] left-[1px] rounded-lg absolute flex justify-center items-center after:content-['_↗'] hover:bg-blue-500 transition duration-300"
+                    target="_blank"
+                  >
+                    Download CV
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -180,9 +161,9 @@ export function Home() {
               skills and experience in web development, design, and more.
             </p>
             <div className="flex justify-center items-center mb-6 text-white/90">
-              <div className="flex-wrap flex justify-center items-center">
+              <div className="grid grid-cols-3 ">
                 <button
-                  className={`border px-4 py-2 hover:bg-blue-500 ${
+                  className={`border px-4 py-2 hover:bg-blue-500 max-md:text-sm ${
                     types === "Web" ? "bg-blue-500" : ""
                   }`}
                   onClick={() => {
@@ -192,7 +173,7 @@ export function Home() {
                   System
                 </button>
                 <button
-                  className={`border px-4 py-2 hover:bg-blue-500 ${
+                  className={`border px-4 py-2 hover:bg-blue-500 max-md:text-sm ${
                     types === "Graphics" ? "bg-blue-500" : ""
                   }`}
                   onClick={() => {
@@ -202,7 +183,7 @@ export function Home() {
                   Graphics
                 </button>
                 <button
-                  className={`border px-4 py-2 hover:bg-blue-500 ${
+                  className={`border px-4 py-2 hover:bg-blue-500 max-md:text-sm ${
                     types === "Illustration" ? "bg-blue-500" : ""
                   }`}
                   onClick={() => {
@@ -261,7 +242,10 @@ export function Home() {
               <CertificateComponents />
             </Suspense>
           </div>
-          <div id="contacts" className="w-full bg-black/40 text-white/90 p-5 textReveal">
+          <div
+            id="contacts"
+            className="w-full bg-black/40 text-white/90 p-5 textReveal"
+          >
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl mb-6 text-center">Contact Me</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -275,7 +259,7 @@ export function Home() {
                 <div className="flex justify-center items-center flex-col ">
                   <div className="flex justify-center space-x-5 mb-8">
                     <a
-                      href="https://github.com/your-username"
+                      href="https://github.com/HydroKaido"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-white/20 rounded-full h-10 w-10 hover:bg-blue-500  transition duration-300"
@@ -283,7 +267,7 @@ export function Home() {
                       <FaGithub className="text-2xl" />
                     </a>
                     <a
-                      href="https://linkedin.com/in/your-profile"
+                      href="https://www.linkedin.com/in/juls-arola/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-white/20 rounded-full h-10 w-10 hover:bg-blue-500  transition duration-300"
@@ -291,7 +275,7 @@ export function Home() {
                       <FaLinkedin className="text-2xl" />
                     </a>
                     <a
-                      href="https://instagram.com/your-profile"
+                      href="https://www.instagram.com/hydrokaido/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center space-x-2 text-lg shadow-md shadow-white/20 rounded-full h-10 w-10 hover:bg-blue-500  transition duration-300"
@@ -299,15 +283,15 @@ export function Home() {
                       <FaInstagram className="text-2xl" />
                     </a>
                   </div>
-                    <div className="flex justify-center items-center relative w-[180px] h-[45px] rounded-lg  overflow-hidden before:absolute before:top-[-150%] before:left-[-50%] before:right-[-50%] before:bottom-[-150%] before: before:bg-[conic-gradient(white,#3b82f6)] before:rounded-lg before:animate-spin-slow">
-                      <a
-                        href="https://drive.google.com/file/d/1JazlhFCCYZKzFiUWasMS_zQEllPUgQxx/view?usp=drive_link"
-                        className="bg-[#19171c] text-white/90 py-3 px-6 top-[1px] right-[1px] bottom-[1px] left-[1px] hover:bg-blue-500  transition duration-300 rounded-lg absolute flex justify-center items-center after:content-['_↗']"
-                        target="_blank"
-                      >
-                        Download CV
-                      </a>
-                    </div>
+                  <div className="flex justify-center items-center relative w-[180px] h-[45px] rounded-lg  overflow-hidden before:absolute before:top-[-150%] before:left-[-50%] before:right-[-50%] before:bottom-[-150%] before: before:bg-[conic-gradient(white,#3b82f6)] before:rounded-lg before:animate-spin-slow">
+                    <a
+                      href="https://drive.google.com/file/d/1JazlhFCCYZKzFiUWasMS_zQEllPUgQxx/view?usp=drive_link"
+                      className="bg-[#19171c] text-white/90 py-3 px-6 top-[1px] right-[1px] bottom-[1px] left-[1px] hover:bg-blue-500  transition duration-300 rounded-lg absolute flex justify-center items-center after:content-['_↗']"
+                      target="_blank"
+                    >
+                      Download CV
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

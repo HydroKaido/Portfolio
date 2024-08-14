@@ -7,8 +7,8 @@ function ExperienceComponents() {
       <ul className="relative list-none space-y-10">
         {experiences.map((experience, index) => (
           <li key={index} className="md:flex md:space-x-8 items-center ">
-            <div className=" bg-blue-600 p-8 rounded-full flex justify-center items-center before:absolute md:before:content-[''] md:before:h-full before:border-blue-600 md:before:border-4 before:-z-10 before:bottom-0 mb-3 max-md:hidden">
-              <FaBriefcase className="text-[30px] " />
+            <div className=" bg-blue-600 p-6 rounded-full flex justify-center items-center before:absolute md:before:content-[''] md:before:h-full before:border-blue-600 md:before:border-4 before:-z-10 before:bottom-0 mb-3 max-md:hidden">
+              <FaBriefcase className="text-[35px] " />
             </div>
             <div className="relative w-full">
               <div className="textReveal before:textReveal md:w-[100%] p-6 bg-white/5 rounded md:before:content-['◀'] before:top-1/2 before:absolute before:-translate-y-1/2  before:-left-3 before:text-white/5">
