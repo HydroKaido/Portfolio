@@ -3,6 +3,7 @@ import NavalConquest from "../../../assets/Naval Conquest.png";
 import Pokemon from "../../../assets/Pokemon-Pokedex.jpg";
 import Tsibug from "../../../assets/E-tsibug.jpg";
 import Kali from "../../../assets/Kali.png"
+import PerPic from "../../../assets/PerPic.jpg"
 import Calendar from "../../../assets/Graphics/Picture Calendar.jpg"
 import DaisyCotton from "../../../assets/Graphics/Daisy CottonBall.jpg"
 import AdamsonCotton from "../../../assets/Graphics/Adamson Cotton Rolls (50 Grams).jpg"
@@ -27,6 +28,7 @@ import Kamikaze2x2 from "../../../assets/Illustration/Kamikazee 1x1.png"
 import Yor from "../../../assets/Illustration/Yor.jpg"
 import Aegiz from "../../../assets/Illustration/A.jpg"
 import Golem from "../../../assets/Illustration/Golem.jpg"
+
 
 
 
@@ -79,6 +81,51 @@ export const projects: Project[] = [
     },
     {
         id: 2,
+        title: 'PerPic',
+        image: [PerPic],
+        categories: 'Hobbies',
+        value: 'Social Media Platform',
+        type: 'Web',
+        stack:
+        <>
+        <ul className="text-gray-300/60 mt-3">
+        <li className="mb-3">
+                Frontend: React, Tailwind, TypeScript 
+            </li>
+            <li>
+                Backend: Express, Node, MongoDB
+            </li>
+        </ul>
+        </>
+        ,
+        link: {
+            name: 'https://pokemon-pokedex-lime.vercel.app/',
+            description: 'Github Repo'
+        }
+    },
+    {
+        id: 3,
+        title: 'Pokemon API',
+        image: [Pokemon],
+        categories: 'Hobbies',
+        value: 'Appoitment and Client Monitoring',
+        type: 'Web',
+        stack:
+        <>
+        <ul className="text-gray-300/60 mt-3">
+            <li className="mb-3">
+                Frontend: HTML, CSS, Javascript, Tailwind, React JS
+            </li>
+        </ul>
+        </>
+        ,
+        link: {
+            name: 'https://pokemon-pokedex-lime.vercel.app/',
+            description: 'Live Demo'
+        }
+    },
+    {
+        id: 4,
         title: 'Naval Conquest',
         image: [NavalConquest],
         categories: 'Multiplayer Games',
@@ -102,7 +149,7 @@ export const projects: Project[] = [
         }
     },
     {
-        id: 3,
+        id: 5,
         title: 'Kali: The Darkness Arrive',
         image: [Kali],
         categories: 'Player vs. Player Game',
@@ -121,33 +168,14 @@ export const projects: Project[] = [
         </>
         ,
         link: {
-            name: 'https://github.com/HydroTolerance/kali-the-darkness-arrive',
-            description: 'Github Repo'
+            name: 'https://blazingwolfstudio32.itch.io/kali-the-darkness-arrive',
+            description: 'Download Game'
         }
     },
+
+    
     {
-        id: 4,
-        title: 'Pokemon API',
-        image: [Pokemon],
-        categories: 'Hobbies',
-        value: 'Appoitment and Client Monitoring',
-        type: 'Web',
-        stack:
-        <>
-        <ul className="text-gray-300/60 mt-3">
-            <li className="mb-3">
-                Frontend: HTML, CSS, Javascript, Tailwind, React JS
-            </li>
-        </ul>
-        </>
-        ,
-        link: {
-            name: 'https://pokemon-pokedex-lime.vercel.app/',
-            description: 'Live Demo'
-        }
-    },
-    {
-        id: 5,
+        id: 6,
         title: 'E-Tsibug',
         image: [Tsibug],
         categories: 'Mobile Application',
@@ -164,7 +192,7 @@ export const projects: Project[] = [
         ,
         link: {
             name: 'https://github.com/HydroTolerance/E-Tsibug',
-            description: 'Live Demo'
+            description: 'Github Repo'
         }
     },
     
