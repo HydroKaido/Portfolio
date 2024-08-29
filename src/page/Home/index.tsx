@@ -127,7 +127,7 @@ export function Home() {
               </p>
 
               <div className="textReveal relative mt-10 flex justify-center">
-                <div className="relative w-[180px] h-[45px] rounded-lg overflow-hidden before:absolute before:top-[-150%] before:left-[-50%] before:right-[-50%] before:bottom-[-150%] before:bg-[conic-gradient(white,#3b82f6)] before:rounded-lg before:animate-spin-slow">
+                <div className="relative w-[180px] h-[45px] rounded-lg overflow-hidden before:absolute before:top-[-180%] before:left-[-50%] before:right-[-50%] before:bottom-[-150%] before:bg-[conic-gradient(white,#3b82f6)] before:rounded-lg before:animate-spin-slow">
                   <a
                     href="https://drive.google.com/file/d/1JazlhFCCYZKzFiUWasMS_zQEllPUgQxx/view?usp=drive_link"
                     className="bg-[#19171c] text-white/90 py-3 px-6 top-[1px] right-[1px] bottom-[1px] left-[1px] rounded-lg absolute flex justify-center items-center after:content-['_↗'] hover:bg-blue-500 transition duration-300"
@@ -283,7 +283,7 @@ export function Home() {
                       <FaInstagram className="text-2xl" />
                     </a>
                   </div>
-                  <div className="flex justify-center items-center relative w-[180px] h-[45px] rounded-lg  overflow-hidden before:absolute before:top-[-150%] before:left-[-50%] before:right-[-50%] before:bottom-[-150%] before: before:bg-[conic-gradient(white,#3b82f6)] before:rounded-lg before:animate-spin-slow">
+                  <div className="flex justify-center items-center relative w-[180px] h-[45px] rounded-lg  overflow-hidden before:absolute  before:top-[-180%] before:left-[-50%] before:right-[-50%] before:bottom-[-150%] before: before:bg-[conic-gradient(white,#3b82f6)] before:rounded-lg before:animate-spin-slow">
                     <a
                       href="https://drive.google.com/file/d/1JazlhFCCYZKzFiUWasMS_zQEllPUgQxx/view?usp=drive_link"
                       className="bg-[#19171c] text-white/90 py-3 px-6 top-[1px] right-[1px] bottom-[1px] left-[1px] hover:bg-blue-500  transition duration-300 rounded-lg absolute flex justify-center items-center after:content-['_↗']"
