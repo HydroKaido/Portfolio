@@ -11,7 +11,7 @@ function GraphicsComponents({ visibility, types, graphics }: Props) {
         {graphics.map((graphic, index) => (
           types === graphic.type ? (
           <div key={index} className="relative group">
-            <div className="h-40 w-full sm:h-48 lg:h-56 xl:h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
+            <div className="h-64 w-full overflow-hidden rounded-lg shadow-lg cursor-pointer">
               <img
                 src={graphic.image[0]}
                 alt=""
