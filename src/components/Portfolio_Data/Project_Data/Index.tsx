@@ -28,6 +28,7 @@ import Kamikaze2x2 from "../../../assets/Illustration/Kamikazee 1x1.png"
 import Yor from "../../../assets/Illustration/Yor.jpg"
 import Aegiz from "../../../assets/Illustration/A.jpg"
 import Golem from "../../../assets/Illustration/Golem.jpg"
+import B2 from "../../../assets/Illustration/2B.png"
 
 
 
@@ -270,8 +271,8 @@ export const graphics:Graphics[] =  [
     },
     {
         id: 11,
-        title: 'Tifa Lockhear (Fanart)',
-        image: [Tifa],
+        title: '2B (Fanart)',
+        image: [B2],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
@@ -303,6 +304,7 @@ export const graphics:Graphics[] =  [
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
+    
     {
         id: 16,
         title: 'Kamikazee (Concept)',
@@ -312,11 +314,13 @@ export const graphics:Graphics[] =  [
     },
     {
         id: 17,
-        title: 'Ms.Fortune (Fanart)',
-        image: [Fortune],
+        title: 'Tifa Lockhear (Fanart)',
+        image: [Tifa],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
+    
+    
     {
         id: 18,
         title: 'Filia (Fanart)',
@@ -345,14 +349,14 @@ export const graphics:Graphics[] =  [
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
-
     {
         id: 22,
-        title: 'Third Sticker',
-        image: [Third],
+        title: 'Ms.Fortune (Fanart)',
+        image: [Fortune],
         value: 'Appoitment and Client Monitoring',
         type: 'Illustration',
     },
+
     {
         id: 23,
         title: 'Kamikazee Sticker',
@@ -362,6 +366,13 @@ export const graphics:Graphics[] =  [
     },
     {
         id: 24,
+        title: 'Third Sticker',
+        image: [Third],
+        value: 'Appoitment and Client Monitoring',
+        type: 'Illustration',
+    },
+    {
+        id: 25,
         title: 'Ancient Golem (3D)',
         image: [Golem],
         value: 'Appoitment and Client Monitoring',
