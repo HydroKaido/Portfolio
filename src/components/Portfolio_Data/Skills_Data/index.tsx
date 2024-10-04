@@ -15,10 +15,6 @@ export const designerTools = [
         icons: <SiAdobeillustrator className="text-[43px]"/>,
         title: 'Adobe Illustrator'
     },
-    {
-        icons: <SiAdobeaftereffects className="text-[43px]"/>,
-        title: 'Adobe After Effects'
-    },
 ]
 export const scriptingTools = [
     {
